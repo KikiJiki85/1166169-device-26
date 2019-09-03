@@ -1,8 +1,8 @@
 # Личный проект «Девайс»
 
 * Студент: [Alexey Vaskin](https://up.htmlacademy.ru/htmlcss/26/user/1166169).
-* Наставник: `Неизвестно`.
-
+* Наставник: [Виктор Кан]
+(https://htmlacademy.ru/profile/viktorkan)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
