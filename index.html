@@ -6,7 +6,8 @@
   </head>
   <body>
   <header>
-    <nav>
+<!--     Верхний блок в header-->
+    <div>
        <a>
          <img src="img/image-logo-header.svg" width="" height="" alt="Логотип интернет-магазина гаджетов Device">
        </a>
@@ -14,20 +15,6 @@
        <li>
          <!--Здесь будет форма поиска по сайту-->
        </li>
-       <li>
-          <button type="button">Каталог товаров</button>
-          <ul>
-            <li><a href="catalog-item.html">Виртуальная реальность</a></li>
-            <li><a href="catalog-item.html">Моноподы для селфи</a></li>
-            <li><a href="catalog-item.html">Экшн-камеры</a></li>
-            <li><a href="catalog-item.html">Фитнес-браслеты</a></li>
-            <li><a href="catalog-item.html">Умные Часы</a></li>
-            <li><a href="catalog-item.html">Квадрокоптеры</a></li>
-          </ul>
-       </li>
-       <li><a href="shipping.html">Доставка</a></li>
-       <li><a href="warranty.html">Гарантия</a></li>
-       <li><a href="contacts.html">Контакты</a></li>
       </ul>
       <ul>
         <li>
@@ -36,13 +23,36 @@
       </ul>
         <a href="compare.html">Сравнить</a>
         <a href="shopping-basket.html">Корзина</a>
-    </nav>
+    </div>  
+<!--    Нижний блок навигации в header-->
+    <nav>
+      <ul>
+        <li>
+<!--          <button type="button">Каталог товаров</button>-->
+<!--              Выпадающее меню размечаем ссылкой?-->
+          <a href="">Каталог товаров</a>
+          <ul>
+            <li><a href="catalog-item.html">Виртуальная реальность</a></li>
+            <li><a href="catalog-item.html">Моноподы для селфи</a></li>
+            <li><a href="catalog-item.html">Экшн-камеры</a></li>
+            <li><a href="catalog-item.html">Фитнес-браслеты</a></li>
+            <li><a href="catalog-item.html">Умные Часы</a></li>
+            <li><a href="catalog-item.html">Квадрокоптеры</a></li>
+          </ul>
+        </li>
+        <li><a href="shipping.html">Доставка</a></li>
+        <li><a href="warranty.html">Гарантия</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </nav>  
   </header>
+ 
   <main>
 <!--   Спрятать h1 при верстке-->
     <h1>Интернет-магазин гаджетов DEVICE</h1>
 <!--      Начало слайдера-->
     <section>
+      <h2>Слайдер популярных гаджетов</h2>
        <p>
          <img src="img/mega-stick.jpg" width="" height="" alt="Самая длинная палка для селфи">
        </p>
@@ -132,6 +142,7 @@
     </section>
 <!--      Блок логотипов-->
     <section>
+     <h2>Производители предлагаемых гаджетов</h2>
       <ul>
         <li>
           <img src="img/DJI-logo.jpg" width="" height="" alt="Логотип фирмы DJI">    
@@ -175,32 +186,37 @@
     </section>
   </main>
   <footer>
-    <a>
-      <img src="img/image-logo-footer.svg" width="" height="" alt="Логотип интернет-магазина гаджетов Device">
-    </a>
-    <p>г.Москва, ул.Строителей, 15</p>
-    <ul>
-      <li><a href="shipping.html">Доставка</a></li>
-      <li><a href="warranty.html">Гарантия</a></li>
-      <li><a href="contacts.html">Контакты</a></li>
-    </ul>
-    <ul>
-      <li><a href="facebook.com">Фэйсбук</a></li>
-      <li><a href="instagram.com">Инстаграм</a></li>
-      <li><a href="twitter.com">Твиттер</a></li>
-    </ul>
-    <ul>
-      <li>
-        <button type="button">Войти</button>
-      </li>
-    </ul>
-    <a href="compare.html">Сравнить</a>
-    <a href="shopping-basket.html">Корзина</a>
-    <p>Тел.: +7 (495) 495-95-95</p>
-    <a href="https://htmlacademy.ru/intensive/htmlcss">
-      <img src="img/dev-logo.svg" width="" height="" alt="Разработчик сайта - Html Academy">
-    </a>
+    <div>
+      <a>
+        <img src="img/image-logo-footer.svg" width="" height="" alt="Логотип интернет-магазина гаджетов Device">
+      </a>
+      <ul>
+        <li>
+          <a href="">Войти</a>
+        </li>
+      </ul>
+      <a href="compare.html">Сравнить</a>
+      <a href="shopping-basket.html">Корзина</a>
+    </div>
+    <div>
+      <p>г.Москва, ул.Строителей, 15</p>
+      <ul>
+        <li><a href="shipping.html">Доставка</a></li>
+        <li><a href="warranty.html">Гарантия</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+      <p>Тел.: +7 (495) 495-95-95</p>
+    </div>
+    <div>
+      <ul>
+        <li><a href="facebook.com">Фэйсбук</a></li>
+        <li><a href="instagram.com">Инстаграм</a></li>
+        <li><a href="twitter.com">Твиттер</a></li>
+      </ul>
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/dev-logo.svg" width="" height="" alt="Разработчик сайта - Html Academy">
+      </a>
+    </div>
   </footer>
-
   </body>
 </html>
