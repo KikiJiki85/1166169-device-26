@@ -14,6 +14,10 @@
       <ul>
        <li>
          <!--Здесь будет форма поиска по сайту-->
+         <form method="post" action=https://echo.htmlacademy.ru >
+           <input type="search" name="search" placeholder="Поиск по сайту" aria-label="Поле поиска по сайту">
+           <button type="submit">Найти</button>
+         </form>
        </li>
       </ul>
       <ul>
@@ -209,7 +213,7 @@
           <img src="img/logo-gopro-passive@2x.jpg" width="260" height="100" alt="Логотип фирмы GoPro"> 
         </li>
         <li>
-          <img src="img/logo-vive-passive.jpg" width="260" height="100" alt="Логотип фирмы VIVE"> 
+          <img src="img/logo-vive-passive@2x.jpg" width="260" height="100" alt="Логотип фирмы VIVE"> 
         </li>
       </ul>
     </section>
@@ -235,9 +239,29 @@
       <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
       проверить работоспособность покупки. Всякое бывает.</p>
       <a href="maps.google.com">
-        <img src="img/map-jpg@2x.jpg" width="560" height="222" alt="Карта проезда к офису интернер-магазина DEVICE по адресу улица Строителей, 15 ">
+        <img src="img/map-jpg@2x.jpg" width="560" height="222" alt="Карта проезда к офису интернет-магазина DEVICE по адресу улица Строителей, 15 ">
       </a>
       <a href="contacts.html">Напишите Нам</a>
+    </section>
+<!--    Модальное окно напишите нам-->
+    <section>
+      <h2 class="visually-hidden">Напишите Нам форма отправки</h2>
+     <form  method="post" action=https://echo.htmlacademy.ru>
+       <label for="user-name">Ваше имя:</label>
+       <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+       <label for="user-email">Ваш e-mail:</label>
+       <input id="user-email" type="text" name="email" placeholder="email@example.com">
+       <label for="user-text">Текст письма:</label>
+       <textarea name="text" id="user-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+       <button type="submit">Отправить</button>
+     </form>
+     <button type="button" aria-label="Закрыть окно">X</button>
+    </section>
+    <!--  Модальное окно большой карты-->
+    <section>
+      <h2 class="visually-hidden">Большая карта проезда к офису интернет-магазина DEVICE по адресу улица Строителей,15</h2>
+      <img src="img/map-big-jpg@2x.jpg" width="960" height="559" alt="Карта проезда к офису интернет-магазина DEVICE по адресу улица Строителей, 15">
+      <button type="button" aria-label="Закрыть окно">X</button>
     </section>
   </main>
   <footer>
