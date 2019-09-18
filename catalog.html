@@ -5,22 +5,22 @@
     <title>Интернет-магазин гаджетов DEVICE</title>
   </head>
   <body>
-  <header>
-   <!--     Верхний блок в header разметил div, на section ругается validator-->
-    <div>
-       <a>
+    <header class="main-header">
+<!--     Верхний блок в header-->
+    <div class="upper-navigation">
+       <a class="main-header-logo">
          <img src="img/device-header-logo.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов Device">
        </a>
       <ul>
        <li>
          <!--Здесь будет форма поиска по сайту-->
-         <form method="get" action=https://echo.htmlacademy.ru >
+         <form class="seach-form" method="get" action=https://echo.htmlacademy.ru >
            <input type="search" name="search" placeholder="Поиск по сайту" aria-label="Поле поиска по сайту">
            <button type="submit">Найти</button>
          </form>
        </li>
       </ul>
-      <ul>
+      <ul class="user-navigation">
         <li>
           <a href="profile.html">Валентин Петухов</a>
         </li>
@@ -32,24 +32,24 @@
         <a href="shopping-basket.html">Корзина</a>
     </div>  
 <!--    Нижний блок навигации в header-->
-      <nav>
-        <ul>
-          <li>
-            <a href="">Каталог товаров</a>
-            <ul>
-              <li><a href="catalog-item.html">Виртуальная реальность</a></li>
-              <li><a href="catalog-item.html">Моноподы для селфи</a></li>
-              <li><a href="catalog-item.html">Экшн-камеры</a></li>
-              <li><a href="catalog-item.html">Фитнес-браслеты</a></li>
-              <li><a href="catalog-item.html">Умные Часы</a></li>
-              <li><a href="catalog-item.html">Квадрокоптеры</a></li>
-            </ul>
-          </li>
-          <li><a href="shipping.html">Доставка</a></li>
-          <li><a href="warranty.html">Гарантия</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-      </nav>  
+    <nav class="main-navigation">
+      <ul class="site-navigation">
+        <li>
+          <a href="">Каталог товаров</a>
+          <ul>
+            <li><a href="catalog-item.html">Виртуальная реальность</a></li>
+            <li><a href="catalog-item.html">Моноподы для селфи</a></li>
+            <li><a href="catalog-item.html">Экшн-камеры</a></li>
+            <li><a href="catalog-item.html">Фитнес-браслеты</a></li>
+            <li><a href="catalog-item.html">Умные Часы</a></li>
+            <li><a href="catalog-item.html">Квадрокоптеры</a></li>
+          </ul>
+        </li>
+        <li><a href="shipping.html">Доставка</a></li>
+        <li><a href="warranty.html">Гарантия</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </nav>  
   </header>
   <main>
     <h1>Моноподы для селфи</h1>
@@ -61,10 +61,67 @@
     <section>
       <h2>Фильтр:</h2>
       <!-- Форму фильтра разметим позже -->
+      <form class="filter-form" method="post" action=https://echo.htmlacademy.ru>
+        <fieldset>
+       <legend>Стоимость</legend>
+         <label for="min-price">от</label>
+         <input type="number" min="0" value="0" id="min-price" name="min-price">
+         <label for="max-price">до</label>
+         <input type="number" max="10000" value="5000" id="max-price" name="max-price"> 
+       </fieldset>
+       <fieldset>
+         <legend>Цвет</legend>
+         <ul>
+           <li>
+             <input type="checkbox" name="black" id="black" checked>
+             <label for="black">Черный</label>
+           </li>
+           <li>
+             <input type="checkbox" name="white" id="white">
+             <label for="white">Белый</label>
+           </li>
+           <li>
+             <input type="checkbox" name="blue" id="blue" checked>
+             <label for="blue">Синий</label>
+           </li>
+           <li>
+             <input type="checkbox" name="red" id="red" checked>
+             <label for="red">Красный</label>
+           </li>
+           <li>
+             <input type="checkbox" name="rose" id="rose">
+             <label for="rose">Розовый</label>
+           </li>
+         </ul>
+       </fieldset>
+       <fieldset>
+        <legend>Bluetooth</legend>
+           <ul>
+           <li>
+             <input type="radio" name="bluetooth" id="bluetooth-yes" value="yes" checked>
+             <label for="bluetooth-yes">Есть</label>
+           </li>
+           <li>
+             <input type="radio" name="bluetooth" id="bluetooth-no" value="no">
+             <label for="bluetooth-no">Нет</label>
+           </li>
+         </ul>
+       </fieldset>
+       <button type="submit">Показать</button>
+      </form>
     </section>
     <section>
-      <h2>Сортировка:</h2>
-        <!--Форму сортировки разметим позже-->
+      <div>
+       <h2>Сортировка:</h2>
+        <ul>
+          <li><span>По цене</span></li>
+          <li><span>По типу</span></li>
+          <li><span>По популярности</span></li>
+          <li><span>Вверх</span></li>
+          <li><span>Вниз</span></li>
+        </ul>
+         
+      </div>
       <h2 class="visually-hidden">Список моноподов для селфи</h2>
       <ul>
         <li>

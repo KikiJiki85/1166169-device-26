@@ -5,32 +5,32 @@
     <title>Интернет-магазин гаджетов DEVICE</title>
   </head>
   <body>
-  <header>
+  <header class="main-header">
 <!--     Верхний блок в header-->
-    <div>
-       <a>
+    <div class="upper-navigation">
+       <a class="main-header-logo">
          <img src="img/device-header-logo.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов Device">
        </a>
       <ul>
        <li>
          <!--Здесь будет форма поиска по сайту-->
-         <form method="get" action=https://echo.htmlacademy.ru >
+         <form class="seach-form" method="get" action=https://echo.htmlacademy.ru >
            <input type="search" name="search" placeholder="Поиск по сайту" aria-label="Поле поиска по сайту">
            <button type="submit">Найти</button>
          </form>
        </li>
       </ul>
-      <ul>
+      <ul class="user-navigation">
         <li>
-          <a href="">Войти</a>
+          <a class="login-link" href="login.html">Войти</a>
         </li>
       </ul>
         <a href="compare.html">Сравнить</a>
         <a href="shopping-basket.html">Корзина</a>
     </div>  
 <!--    Нижний блок навигации в header-->
-    <nav>
-      <ul>
+    <nav class="main-navigation">
+      <ul class="site-navigation">
         <li>
           <a href="">Каталог товаров</a>
           <ul>
@@ -244,7 +244,7 @@
       <a href="contacts.html">Напишите Нам</a>
     </section>
 <!--    Модальное окно напишите нам-->
-    <section>
+    <section class="modal modal-writeus">
       <h2 class="visually-hidden">Напишите Нам форма отправки</h2>
      <form  method="post" action=https://echo.htmlacademy.ru>
        <label for="user-name">Ваше имя:</label>
@@ -255,7 +255,7 @@
        <textarea name="text" id="user-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
        <button type="submit">Отправить</button>
      </form>
-     <button type="button" aria-label="Закрыть окно">X</button>
+     <button class="modal-close" type="button" aria-label="Закрыть окно">X</button>
     </section>
     <!--  Модальное окно большой карты-->
     <section>
