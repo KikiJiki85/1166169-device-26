@@ -2,52 +2,58 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+     <head>
+    <meta charset="utf-8">
     <title>Интернет-магазин гаджетов DEVICE</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
   </head>
   <body>
-    <header class="main-header">
+  <header class="main-header">
 <!--     Верхний блок в header-->
     <div class="upper-navigation">
        <a class="main-header-logo">
          <img src="img/device-header-logo.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов Device">
        </a>
-      <ul>
+      <ul class="search-field">
        <li>
          <!--Здесь будет форма поиска по сайту-->
          <form class="seach-form" method="get" action=https://echo.htmlacademy.ru >
            <input type="search" name="search" placeholder="Поиск по сайту" aria-label="Поле поиска по сайту">
-           <button type="submit">Найти</button>
+           <button type="submit" class="hidden">Найти</button>
          </form>
        </li>
       </ul>
       <ul class="user-navigation">
         <li>
-          <a href="profile.html">Валентин Петухов</a>
+          <a href="#">Валентин Петухов</a>
         </li>
         <li>
           <a href="">Выйти</a>
         </li>
       </ul>
-        <a href="compare.html">Сравнить</a>
-        <a href="shopping-basket.html">Корзина</a>
+        <a href="#">Сравнить</a>
+        <a href="#">Корзина</a>
     </div>  
 <!--    Нижний блок навигации в header-->
     <nav class="main-navigation">
       <ul class="site-navigation">
         <li>
           <a href="">Каталог товаров</a>
-          <ul>
-            <li><a href="catalog-item.html">Виртуальная реальность</a></li>
-            <li><a href="catalog-item.html">Моноподы для селфи</a></li>
-            <li><a href="catalog-item.html">Экшн-камеры</a></li>
-            <li><a href="catalog-item.html">Фитнес-браслеты</a></li>
-            <li><a href="catalog-item.html">Умные Часы</a></li>
-            <li><a href="catalog-item.html">Квадрокоптеры</a></li>
+          <ul class="catalog-navigation">
+            <li><a href="#">Виртуальная реальность</a></li>
+            <li><a href="#">Моноподы для селфи</a></li>
+            <li><a href="#">Экшн-камеры</a></li>
+            <li><a href="#">Фитнес-браслеты</a></li>
+            <li><a href="#">Умные Часы</a></li>
+            <li><a href="#">Квадрокоптеры</a></li>
           </ul>
         </li>
-        <li><a href="shipping.html">Доставка</a></li>
-        <li><a href="warranty.html">Гарантия</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Гарантия</a></li>
+        <li><a href="#">Контакты</a></li>
       </ul>
     </nav>  
   </header>
