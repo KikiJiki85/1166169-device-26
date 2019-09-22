@@ -1,17 +1,16 @@
 @font-face {
-    font-family: 'gilroyextrabold';
+    font-family: 'Gilroy';
     src: url('gilroyextrabold-webfont.woff2') format('woff2'),
          url('gilroyextrabold-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: 800;
     font-style: normal;
-
 }
 
 @font-face {
-    font-family: 'gilroylight';
+    font-family: 'Gilroy';
     src: url('gilroylight-webfont.woff2') format('woff2'),
          url('gilroylight-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: 300;
     font-style: normal;
 
 }
@@ -57,7 +56,7 @@ footer {
 }
 
 .main-navigation {
-  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
@@ -103,13 +102,14 @@ footer {
   color: rgba(0, 0, 0, 0.6);
 }
 
+.index-catalog a:active,
 .upper-navigation a:active,
 .site-navigation a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
 .slider-call {
-  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-weight: 800;
   font-size: 47px;
   letter-spacing: 0.47px;
@@ -118,7 +118,7 @@ footer {
 }
 
 .btn {
-  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-weight: 800;
   text-transform: uppercase;
   font-size: 18px;
@@ -126,6 +126,15 @@ footer {
   letter-spacing: 3.6px;
   text-align: center;
   color: #000000;
+}
+
+.index-service a:hover,
+.index-service a:focus {
+  background-color: #f0c52e;
+}
+.index-service a:active {
+  color: #f7e184;
+  background-color: #000000;
 }
 
 .slider-features th {
@@ -146,7 +155,7 @@ footer {
   background-color: #e5e5e5;
 }
 .index-catalog a {
-  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
   font-style: normal;
@@ -159,7 +168,7 @@ footer {
 .index-service h3,
 .index-aboutus h2,
 .index-contacts h2{
-  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
   font-style: normal;
@@ -169,7 +178,7 @@ footer {
 }
 
 .index-aboutus li {
-  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 40px;
@@ -182,16 +191,22 @@ footer ul {
 }
 
 .footer-user a {
-  opacity: 0.7;
-  line-height: 36px;
   color: rgba(255, 255, 255, 0.7);
 }
 
+.footer-user a:hover,
+.footer-user a:focus,
 .footer-service a {
   color: #ffffff;
 }
 
+.footer-service a:hover,
+.footer-service a:focus {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-user a:active,
+.footer-service a:active,
 .footer-social a {
-  color: #ffffff;
-  opacity: 0.7;
+  color: rgba(255, 255, 255, 0.3);
 }
