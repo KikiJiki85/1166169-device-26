@@ -1,15 +1,15 @@
 @font-face {
     font-family: 'Gilroy';
-    src: url('gilroyextrabold-webfont.woff2') format('woff2'),
-         url('gilroyextrabold-webfont.woff') format('woff');
+    src: url('gilroyextrabold.woff2') format('woff2'),
+         url('gilroyextrabold.woff') format('woff');
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('gilroylight-webfont.woff2') format('woff2'),
-         url('gilroylight-webfont.woff') format('woff');
+    src: url('gilroylight.woff2') format('woff2'),
+         url('gilroylight.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 
@@ -210,3 +210,117 @@ footer ul {
 .footer-social a {
   color: rgba(255, 255, 255, 0.3);
 }
+
+/*catalog.html*/
+
+.inner-page h1 {
+  font-family: 'Gilroy';
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0.47px;
+  text-align: left;
+  color: #000000;
+}
+
+.inner-page button {
+  background-color: #ffffff;
+  border: none;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a,
+.breadcrumbs-current {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs a:focus,
+.breadcrumbs a:hover,
+.breadcrumbs-current:focus,
+.breadcrumbs-current:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs a:active {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.filter-form fieldset {
+  border: none;
+}
+
+.filters h2,
+.catalog h2 {
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 3.2px;
+}
+
+.filter-form legend {
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+}
+
+.filter-form ul {
+  font-family: 'OpenSans', Arial, sans-serif;
+  list-style: none;
+  color: #000000;
+}
+
+.filter-input:disabled + label {
+  color: #a6a6a6;
+}
+
+.sorting ul {
+  list-style: none;
+}
+
+.sorting a {
+  font-family: 'OpenSans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.catalog-breadcrumbs a {
+  color: #000000;
+  opacity: 0.3;
+}
+
+a.catalog-active {
+  opacity: 1;
+}
+
+.catalog-list,
+.catalog-breadcrumbs{
+  list-style: none;
+}
+
+.catalog-item a {
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  text-align: left;
+  color: #000000;
+}
+
+.catalog-item p {
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+  color: #464646;
+}
+
