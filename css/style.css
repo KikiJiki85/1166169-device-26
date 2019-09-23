@@ -63,20 +63,11 @@ footer {
   letter-spacing: 3.6px;
   text-transform: uppercase;
   color: #000000;
-  
 }
 
-.catalog-navigation {
-  text-transform: none;
-}
 .search-field,
 .site-navigation,
-.user-navigation,
-.catalog-navigation,
-.index-slider,
-.index-catalog ul,
-.partners-logos ul,
-.index-service ul{
+.user-navigation {
   list-style: none;
 }
 
@@ -93,6 +84,8 @@ footer {
   font-weight: 300;
   line-height: 36px;
   letter-spacing: 0.15px;
+  list-style: none;
+  text-transform: none;
 }
 
 .upper-navigation a:hover,
@@ -108,13 +101,16 @@ footer {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.index-slider {
+  list-style: none;
+}
+
 .slider-call {
   font-family: 'Gilroy', Arial, sans-serif;
   font-weight: 800;
   font-size: 47px;
   letter-spacing: 0.47px;
   line-height: 56px;
-  
 }
 
 .btn {
@@ -126,6 +122,10 @@ footer {
   letter-spacing: 3.6px;
   text-align: center;
   color: #000000;
+}
+
+.index-service ul {
+  list-style: none;
 }
 
 .index-service a:hover,
@@ -154,6 +154,11 @@ footer {
 .index-service {
   background-color: #e5e5e5;
 }
+
+.index-catalog ul {
+  list-style: none;  
+}
+
 .index-catalog a {
   font-family: 'Gilroy', Arial, sans-serif;
   font-size: 18px;
@@ -163,6 +168,10 @@ footer {
   line-height: 24px;
   letter-spacing: 0.18px;
   color: #000000;
+}
+
+.partners-logos ul {
+  list-style: none;
 }
 
 .index-service h3,
@@ -214,7 +223,7 @@ footer ul {
 /*catalog.html*/
 
 .inner-page h1 {
-  font-family: 'Gilroy';
+  font-family: 'Gilroy', Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
   line-height: 48px;
