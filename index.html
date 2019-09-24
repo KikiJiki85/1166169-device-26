@@ -8,21 +8,23 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-  <header class="main-header">
+  <header class="main-header container">
 <!--     Верхний блок в header-->
-    <div class="upper-navigation">
+    <div class="upper-navigation">   
+      <div class="logo-wrapper">
        <a class="main-header-logo">
          <img src="img/device-header-logo.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов Device">
        </a>
       <ul class="search-field">
        <li>
          <!--Здесь будет форма поиска по сайту-->
-         <form class="seach-form" method="get" action=https://echo.htmlacademy.ru >
+         <form class="search-form" method="get" action=https://echo.htmlacademy.ru >
            <input type="search" name="search" placeholder="Поиск по сайту" aria-label="Поле поиска по сайту">
-           <button type="submit" class="hidden">Найти</button>
+           <button type="submit" class="">Найти</button>
          </form>
        </li>
       </ul>
+      </div>
       <ul class="user-navigation">
         <li>
           <a class="login-link" href="#">Войти</a>
@@ -36,7 +38,7 @@
       <ul class="site-navigation">
         <li>
           <a href="">Каталог товаров</a>
-          <ul class="catalog-navigation">
+          <ul class="catalog-navigation hidden">
             <li><a href="#">Виртуальная реальность</a></li>
             <li><a href="#">Моноподы для селфи</a></li>
             <li><a href="#">Экшн-камеры</a></li>
@@ -52,7 +54,7 @@
     </nav>  
   </header>
  
-  <main class="container">
+  <main class="">
 <!--   Спрятать h1 при верстке-->
     <h1 class="visually-hidden">Интернет-магазин гаджетов DEVICE</h1>
 <!--      Начало слайдера-->

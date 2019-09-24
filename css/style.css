@@ -40,14 +40,11 @@ body {
   color: #464646;
   background-color: #ffffff;
   letter-spacing: 0.15px;
+  padding-top: 40px;
 }
 
 a {
   text-decoration: none;
-}
-
-header {
-  background-color: #f0c52e; 
 }
 
 footer {
@@ -333,3 +330,90 @@ a.catalog-active {
   color: #464646;
 }
 
+
+/*flex*/
+.user-navigation {
+  padding: 0;
+  margin: 0;
+  margin-left: 100px;
+  margin-right: 238px;
+}
+
+.user-navigation li  {
+  margin: 0;
+}
+
+.search-field {
+  padding: 0;
+  margin: 0;
+  margin-left: 99px;
+  margin-top: 37px;
+}
+
+input[type=search] {
+  width: 125px;
+  background-color: #f7e184;
+  border: none;
+  padding: 0;  
+  opacity: 0.3;
+  margin-right: 195px;
+}
+
+.search-field button {
+  background-color: #f7e184;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #000000;
+  border-bottom: none;
+  width: 85px;
+  height: 49px;
+
+}
+
+form.search-form 
+{
+  border-bottom: 2px solid #000000;
+}
+
+.upper-navigation {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 50px;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: #f7e184;
+}
+
+.main-header-logo {
+  margin-left: 59px;
+  width: 163px;
+  height: 35px;
+}
+
+/*flex main-navigation*/
+.site-navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: 60px;
+  
+}
+
+.site-navigation li:first-child {
+  margin-right: 326px;
+}
+
+.site-navigation li:nth-child(3) {
+  margin-right: 114px;
+  margin-left: 38px;
+}
+
+.upper-navigation a:nth-child(4) {
+  margin-left: 65px;
+}
