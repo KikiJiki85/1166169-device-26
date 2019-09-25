@@ -43,9 +43,16 @@ a {
   text-decoration: none;
 }
 
-footer {
+.main-footer {
   background-color: #464646;
   color: #ffffff;
+}
+
+
+/*Заглушка от вываливания при уменьшении окна по ширине*/
+.main-footer .container {
+background-color: #464646;
+padding: 65px 0px 66px 0px;
 }
 
 .main-navigation {
@@ -191,12 +198,12 @@ footer ul {
   list-style: none;
 }
 
-.footer-user a {
+.footer-nav a {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.footer-user a:hover,
-.footer-user a:focus,
+.footer-nav a:hover,
+.footer-nav a:focus,
 .footer-service a {
   color: #ffffff;
 }
@@ -206,7 +213,7 @@ footer ul {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-user a:active,
+.footer-nav a:active,
 .footer-service a:active,
 .footer-social a {
   color: rgba(255, 255, 255, 0.3);
@@ -326,7 +333,7 @@ a.catalog-active {
 }
 
 
-/*flex*/
+/*flex header*/
 
 .upper-navigation {
   display: flex;
@@ -442,7 +449,7 @@ body .hidden {
   bottom: 100px;
 }
 
-/*index-catalog*/
+/*============index-catalog================*/
 .index-catalog ul {
   margin: 0;
   padding: 0;
@@ -456,3 +463,62 @@ body .hidden {
 .index-catalog li {
   width: 160px;
 }
+
+/*==============footer============*/
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+
+}
+
+.footer-user {
+  margin-left: auto;
+}
+
+footer .compare {
+  margin-left: 64px;
+}
+
+.footer-service {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.footer-service p {
+  margin: 0;
+}
+
+.footer-social ul,
+.footer-service ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-service li:nth-child(2) {
+  margin-left: 38px; 
+  margin-right: 38px;
+}
+
+.footer-social {
+  display: flex;
+  margin-top: 70px;
+}
+
+.footer-social li:nth-child(2) {
+  margin-right: 22px;
+  margin-left: 23px;
+}
+
+.footer-social ul {
+  margin-left: 510px;;
+}
+
+.htmlacademy {
+  margin-left: auto;
+}
+
+
+
