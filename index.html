@@ -11,27 +11,22 @@
   <header class="main-header container">
 <!--     Верхний блок в header-->
     <div class="upper-navigation">   
-      <div class="logo-wrapper">
        <a class="main-header-logo">
          <img src="img/device-header-logo.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов Device">
        </a>
-      <ul class="search-field">
-       <li>
-         <!--Здесь будет форма поиска по сайту-->
-         <form class="search-form" method="get" action=https://echo.htmlacademy.ru >
-           <input type="search" name="search" placeholder="Поиск по сайту" aria-label="Поле поиска по сайту">
-           <button type="submit" class="">Найти</button>
-         </form>
-       </li>
-      </ul>
-      </div>
+<!--       Форма поиска по сайту-->
+       <form class="search-field" method="get" action=https://echo.htmlacademy.ru >
+         <input type="search" name="search" placeholder="Поиск по сайту" aria-label="Поле поиска по сайту">
+         <button type="submit" class="hidden">Найти</button>
+       </form>
+       
       <ul class="user-navigation">
         <li>
           <a class="login-link" href="#">Войти</a>
         </li>
       </ul>
-        <a href="#">Сравнить</a>
-        <a href="#">Корзина</a>
+         <a href="#">Сравнить</a>
+         <a href="#">Корзина</a>
     </div>  
 <!--    Нижний блок навигации в header-->
     <nav class="main-navigation">
@@ -54,7 +49,7 @@
     </nav>  
   </header>
  
-  <main class="">
+  <main class="container">
 <!--   Спрятать h1 при верстке-->
     <h1 class="visually-hidden">Интернет-магазин гаджетов DEVICE</h1>
 <!--      Начало слайдера-->
@@ -66,7 +61,7 @@
           <div>
             <img src="img/slider-1-png@2x.png" width="384" height="486" alt="Самая длинная палка для селфи">
           </div>
-          <div>
+          <div class="slider-text">
             <p class="slider-call">
              Делай селфи, <br>
              как Бен Стиллер! 
@@ -281,6 +276,7 @@
     </section>
   </main>
   <footer>
+    <div class="container">
     <div class="footer-user">
       <a>
         <img src="img/device-footer-logo.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов Device">
@@ -311,6 +307,7 @@
       <a href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/logo-htmlacademy.svg" width="27" height="35" alt="Разработчик сайта - Html Academy">
       </a>
+    </div>
     </div>
   </footer>
   </body>

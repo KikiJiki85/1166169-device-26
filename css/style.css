@@ -1,22 +1,18 @@
 @font-face {
     font-family: 'Gilroy';
-    src: url('gilroyextrabold.woff2') format('woff2'),
-         url('gilroyextrabold.woff') format('woff');
+    src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
+         url('../fonts/gilroyextrabold.woff') format('woff');
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('gilroylight.woff2') format('woff2'),
-         url('gilroylight.woff') format('woff');
+    src: url('../fonts/gilroylight.woff2') format('woff2'),
+         url('../fonts/gilroylight.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 
-}
-
-.hidden {
-  display: none;
 }
 
 .visually-hidden {
@@ -335,19 +331,13 @@ a.catalog-active {
 .user-navigation {
   padding: 0;
   margin: 0;
-  margin-left: 100px;
-  margin-right: 238px;
-}
+  margin-left: auto;;
 
-.user-navigation li  {
-  margin: 0;
 }
 
 .search-field {
   padding: 0;
   margin: 0;
-  margin-left: 99px;
-  margin-top: 37px;
 }
 
 input[type=search] {
@@ -356,7 +346,6 @@ input[type=search] {
   border: none;
   padding: 0;  
   opacity: 0.3;
-  margin-right: 195px;
 }
 
 .search-field button {
@@ -370,15 +359,17 @@ input[type=search] {
 
 }
 
+/*
 form.search-form 
 {
   border-bottom: 2px solid #000000;
 }
+*/
 
 .upper-navigation {
   display: flex;
-  align-items: flex-end;
   margin-bottom: 50px;
+  align-items: center;
 }
 
 .container {
@@ -388,12 +379,15 @@ form.search-form
 
 .main-header {
   background-color: #f7e184;
+  padding: 53px 61px 58px 60px;
+  box-sizing: border-box;
 }
 
 .main-header-logo {
-  margin-left: 59px;
   width: 163px;
   height: 35px;
+  position: absolute;
+  top: 21px;
 }
 
 /*flex main-navigation*/
@@ -401,12 +395,10 @@ form.search-form
   display: flex;
   margin: 0;
   padding: 0;
-  margin-left: 60px;
-  
 }
 
 .site-navigation li:first-child {
-  margin-right: 326px;
+  margin-right: auto;
 }
 
 .site-navigation li:nth-child(3) {
@@ -414,6 +406,16 @@ form.search-form
   margin-left: 38px;
 }
 
-.upper-navigation a:nth-child(4) {
-  margin-left: 65px;
+
+/*flex main slider*/
+.index-slider li {
+  display: flex;
+}
+
+body .hidden {
+  display: none;
+}
+
+.slider-text {
+  margin-left: 125px;
 }
