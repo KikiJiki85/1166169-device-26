@@ -58,7 +58,6 @@ footer {
   color: #000000;
 }
 
-.search-field,
 .site-navigation,
 .user-navigation {
   list-style: none;
@@ -328,11 +327,41 @@ a.catalog-active {
 
 
 /*flex*/
+
+.upper-navigation {
+  display: flex;
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: #f7e184;
+  padding: 53px 61px 53px 60px;
+  box-sizing: border-box;
+}
+
+.main-header-logo {
+  width: 163px;
+  height: 35px;
+  position: absolute;
+  top: 21px;
+}
+
 .user-navigation {
   padding: 0;
   margin: 0;
-  margin-left: auto;;
+  margin-left: auto;
+  display: flex;
+/*  margin-right: auto;*/
+}
 
+.user-navigation li:last-child {
+  margin-left: 20px;
 }
 
 .search-field {
@@ -356,39 +385,20 @@ input[type=search] {
   border-bottom: none;
   width: 85px;
   height: 49px;
+}
 
+.compare {
+  margin-right: 65px;
+  margin-left: 86px;
 }
 
 /*
-form.search-form 
+form.search-field 
 {
   border-bottom: 2px solid #000000;
 }
 */
 
-.upper-navigation {
-  display: flex;
-  margin-bottom: 50px;
-  align-items: center;
-}
-
-.container {
-  width: 1160px;
-  margin: 0 auto;
-}
-
-.main-header {
-  background-color: #f7e184;
-  padding: 53px 61px 58px 60px;
-  box-sizing: border-box;
-}
-
-.main-header-logo {
-  width: 163px;
-  height: 35px;
-  position: absolute;
-  top: 21px;
-}
 
 /*flex main-navigation*/
 .site-navigation {
@@ -407,15 +417,42 @@ form.search-form
 }
 
 
-/*flex main slider*/
+/*============flex main slider===============*/
+.index-slider {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
 .index-slider li {
-  display: flex;
+  display: flex; 
+  justify-content: space-around;
 }
 
 body .hidden {
   display: none;
 }
 
-.slider-text {
-  margin-left: 125px;
+.slider-nav {
+  padding: 0;
+  display: flex;
+  position: absolute;
+  right: 83px;
+  bottom: 100px;
+}
+
+/*index-catalog*/
+.index-catalog ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding-top: 106px;
+  padding-bottom: 84px;
+}
+
+.index-catalog li {
+  width: 160px;
 }

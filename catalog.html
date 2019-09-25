@@ -8,21 +8,18 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="inner-page">
-    <header class="main-header">
+    <header class="main-header container">
 <!--     Верхний блок в header-->
-    <div class="upper-navigation">
+    <div class="upper-navigation">   
        <a class="main-header-logo">
          <img src="img/device-header-logo.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов Device">
        </a>
-      <ul class="search-field">
-       <li>
-         <!--Здесь будет форма поиска по сайту-->
-         <form class="seach-form" method="get" action=https://echo.htmlacademy.ru >
-           <input type="search" name="search" placeholder="Поиск по сайту" aria-label="Поле поиска по сайту">
-           <button type="submit" class="hidden">Найти</button>
-         </form>
-       </li>
-      </ul>
+<!--       Форма поиска по сайту-->
+       <form class="search-field" method="get" action=https://echo.htmlacademy.ru >
+         <input type="search" name="search" placeholder="Поиск по сайту" aria-label="Поле поиска по сайту">
+         <button type="submit" class="hidden">Найти</button>
+       </form>
+<!--       User panel-->
       <ul class="user-navigation">
         <li>
           <a href="#">Валентин Петухов</a>
@@ -31,15 +28,15 @@
           <a href="">Выйти</a>
         </li>
       </ul>
-        <a href="#">Сравнить</a>
-        <a href="#">Корзина</a>
+         <a href="#" class="compare">Сравнить</a>
+         <a href="#">Корзина</a>
     </div>  
 <!--    Нижний блок навигации в header-->
     <nav class="main-navigation">
       <ul class="site-navigation">
         <li>
           <a href="">Каталог товаров</a>
-          <ul class="catalog-navigation">
+          <ul class="catalog-navigation hidden">
             <li><a href="#">Виртуальная реальность</a></li>
             <li><a href="#">Моноподы для селфи</a></li>
             <li><a href="#">Экшн-камеры</a></li>
@@ -54,8 +51,8 @@
       </ul>
     </nav>  
   </header>
-      
-  <main>
+     
+  <main class="container">
     <h1>Моноподы для селфи</h1>
     <ul class="breadcrumbs">
       <li><a href="index.html">Главная</a></li>
@@ -166,40 +163,42 @@
       <button type="button" class="btn">Вперед</button>
     </section>
   </main>
-    <footer>
-    <div class="footer-user">
-      <a>
-        <img src="img/device-footer-logo.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов Device">
-      </a>
-      <ul>
-        <li>
-          <a href="">Валентин Петухов</a>
-        </li>
-        <li>
-          <a href="">Выйти</a>
-        </li>
-      </ul>
-      <a href="#">Сравнить</a>
-      <a href="#">Корзина</a>
-    </div>
-    <div>
-      <p>г.Москва, ул.Строителей, 15</p>
-      <ul class="footer-service">
-        <li><a href="#" class="btn">Доставка</a></li>
-        <li><a href="#" class="btn">Гарантия</a></li>
-        <li><a href="#" class="btn">Контакты</a></li>
-      </ul>
-      <p>Тел.: +7 (495) 495-95-95</p>
-    </div>
-    <div class="footer-social">
-      <ul>
-        <li><a href="#" aria-label="Интернет магазин DEVICE на Фэйсбук">Фэйсбук</a></li>
-        <li><a href="#" aria-label="Интернет магазин DEVICE в Инстаграм">Инстаграм</a></li>
-        <li><a href="#" aria-label="Интернет магазин DEVICE в Твиттере" >Твиттер</a></li>
-      </ul>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-htmlacademy.svg" width="27" height="35" alt="Разработчик сайта - Html Academy">
-      </a>
+  <footer>
+    <div class="container">  
+      <div class="footer-user">
+        <a>
+          <img src="img/device-footer-logo.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов Device">
+        </a>
+        <ul>
+          <li>
+            <a href="">Валентин Петухов</a>
+          </li>
+          <li>
+            <a href="">Выйти</a>
+          </li>
+        </ul>
+        <a href="#">Сравнить</a>
+        <a href="#">Корзина</a>
+      </div>
+      <div>
+        <p>г.Москва, ул.Строителей, 15</p>
+        <ul class="footer-service">
+          <li><a href="#" class="btn">Доставка</a></li>
+          <li><a href="#" class="btn">Гарантия</a></li>
+          <li><a href="#" class="btn">Контакты</a></li>
+        </ul>
+        <p>Тел.: +7 (495) 495-95-95</p>
+      </div>
+      <div class="footer-social">
+        <ul>
+          <li><a href="#" aria-label="Интернет магазин DEVICE на Фэйсбук">Фэйсбук</a></li>
+          <li><a href="#" aria-label="Интернет магазин DEVICE в Инстаграм">Инстаграм</a></li>
+          <li><a href="#" aria-label="Интернет магазин DEVICE в Твиттере" >Твиттер</a></li>
+        </ul>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo-htmlacademy.svg" width="27" height="35" alt="Разработчик сайта - Html Academy">
+        </a>
+      </div>
     </div>
   </footer>
          
