@@ -372,7 +372,66 @@ a.catalog-active {
   margin: 0;
   margin-left: auto;
   display: flex;
-/*  margin-right: auto;*/
+}
+
+.login-link,
+.compare,
+.basket{
+  display: block;
+  padding-left: 25px;
+  position: relative;
+}
+
+.login-link::before{
+  content: '';
+  width: 13px;
+  height: 12px;
+  position: absolute;
+  background-image: url('../img/user.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: 9px;
+  left: 0px;
+}
+
+.compare::before{
+  content: '';
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-image: url('../img/compare.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: 11px;
+  left: 5px;
+}
+
+.basket::before{
+  content: '';
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  background-image: url('../img/cart.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: 10px;
+  left: 5px;
+}
+
+
+.login-link:hover::before,
+.login-link:focus::before,
+.compare:hover::before,
+.compare:focus::before,
+.basket:hover::before,
+.basket:focus::before{
+  opacity: 0.6;
+}
+
+.login-link:active::before,
+.compare:active::before,
+.basket:active::before{
+  opacity: 0.3;
 }
 
 .user-navigation li:last-child,
@@ -380,10 +439,29 @@ a.catalog-active {
   margin-left: 20px;
 }
 
+
 .search-field {
+  position: relative;
   padding: 0;
   margin: 0;
+  padding-left: 38px;
+  
 }
+
+.search-field::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-color: #f7e184;
+  position: absolute;
+  background-image: url('../img/search.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: 7px;
+  left: 4px;
+}
+
+
 
 input[type=search] {
   width: 125px;
@@ -510,6 +588,23 @@ body .hidden {
 .index-contacts {
   width: 560px;
 }
+
+.index-service .container {
+  background-color: #e5e5e5;
+  display: flex;
+}
+
+/*index-about-us*/
+
+.index-twocolumn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.index-contacts {
+    
+}
+
 /*============Partners logo=================*/
 .partners-logos {
   padding-top: 94px;
