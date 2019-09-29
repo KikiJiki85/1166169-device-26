@@ -111,12 +111,20 @@ padding: 65px 0px 66px 0px;
   list-style: none;
 }
 
-.slider-call {
+.slider-text .slider-call {
   font-family: 'Gilroy', Arial, sans-serif;
   font-weight: 800;
   font-size: 47px;
   letter-spacing: 0.47px;
   line-height: 56px;
+  margin: 0;
+  margin-top: 70px;
+  margin-bottom: 31px;
+  color: #000000;
+}
+
+.slider-text p {
+  margin-bottom: 47px;
 }
 
 .btn {
@@ -128,19 +136,30 @@ padding: 65px 0px 66px 0px;
   letter-spacing: 3.6px;
   text-align: center;
   color: #000000;
+  padding: 14px 43px 11px 44px;
+  background-image: url('../img/btnback.png');
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
 
 .index-service ul {
   list-style: none;
 }
 
-.index-service a:hover,
-.index-service a:focus {
+.btn:hover,
+.btn:focus {
   background-color: #f0c52e;
 }
+
+.btn:active {
+  color: rgba(0,0,0,0.3);
+}
+
 .index-service a:active {
   color: #f7e184;
   background-color: #000000;
+  background-image: none;
 }
 
 .slider-features th {
@@ -354,8 +373,8 @@ a.catalog-active {
 }
 
 .main-header {
-  background-color: #f7e184;
-  padding: 53px 61px 53px 60px;
+  background-color: rgba(240,197,46,0.5);
+  padding: 53px 61px 58px 60px;
   box-sizing: border-box;
 }
 
@@ -452,7 +471,6 @@ a.catalog-active {
   content: '';
   width: 16px;
   height: 16px;
-  background-color: #f7e184;
   position: absolute;
   background-image: url('../img/search.svg');
   background-repeat: no-repeat;
@@ -494,7 +512,7 @@ form.search-field
 */
 
 
-/*flex main-navigation*/
+/*main-navigation*/
 .site-navigation {
   display: flex;
   margin: 0;
@@ -510,6 +528,27 @@ form.search-field
   margin-left: 38px;
 }
 
+.header-catalog {
+  display: block;
+  padding-right: 32px;
+  position: relative;
+}
+
+.header-catalog::after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  background-image: url('../img/plus@2x.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  top: 3px;
+  right: 8px;
+  
+  
+}
+
 
 /*============flex main slider===============*/
 .index-slider {
@@ -521,7 +560,7 @@ form.search-field
 
 .index-slider li {
   display: flex; 
-  justify-content: space-around;
+/*  justify-content: space-around;*/
 }
 
 body .hidden {
@@ -535,6 +574,20 @@ body .hidden {
   right: 83px;
   bottom: 100px;
 }
+
+.first-slide {
+  background-image: url('../img/01.png');
+  background-repeat: no-repeat;
+  background-position: 0 -199px;
+}
+
+.first-slide img {
+  width: 384px;
+  height: 486px;
+  margin-left: 90px;
+  margin-right: 125px;
+}
+
 
 /*============index-catalog================*/
 .index-catalog ul {
