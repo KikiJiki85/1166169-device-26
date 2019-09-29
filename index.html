@@ -49,12 +49,13 @@
     </nav>  
   </header>
  
-  <main class="container">
+  <main>
 <!--   Спрятать h1 при верстке-->
     <h1 class="visually-hidden">Интернет-магазин гаджетов DEVICE</h1>
 <!--      Начало слайдера-->
     <section>
       <h2 class="visually-hidden">Слайдер популярных гаджетов</h2>
+      <div class="container">
       <ul class="index-slider">
 <!--         Первый слайд-->
         <li>
@@ -140,11 +141,13 @@
           </ul> 
         </li> 
       </ul>
+      </div>
     </section>
 <!--    Блок разделов-->
     <section class="index-catalog">
 <!--    Спрятать этот h2 при верстке-->
      <h2 class="visually-hidden">Каталог предлагаемого оборудование</h2>
+       <div class="container">
       <ul>
         <li>
           <a href="#">Виртуальная реальность</a>
@@ -165,14 +168,15 @@
           <a href="#">Квадрокоптеры</a>
         </li>
       </ul>
+      </div>
     </section>
 <!--    Блок-Слайдер Доставка, Гарантия, Кредит-->
-   
    
     <section class="index-service">
 <!--       Спрятать h2 при верстке-->
       <h2 class="visually-hidden">Доставка, Гарантия, Кредит</h2>
-       <ul>
+      <div class="container">
+       <ul class="service-list">
          <li><a href="#" class="btn">Доставка </a></li>
          <li><a href="#" class="btn">Гарантия</a></li>
          <li><a href="#" class="btn"> Кредит</a></li>
@@ -197,36 +201,40 @@
              условия кредита. Выгодные для нашего банка, разумеется.</p>
          </li>
        </ul>
+       </div>
     </section>
   
 <!--      Блок логотипов-->
     <section class="partners-logos">
      <h2 class="visually-hidden">Производители предлагаемых гаджетов</h2>
-      <ul>
-        <li>
-         <img src="img/logo-dji-passive@2x.jpg" width="260" height="100" 
-          onmouseover="this.src='img/logo-dji-active@2x.jpg'; this.width=260;this.height=100;" 
-          onmouseout="this.src='img/logo-dji-passive@2x.jpg'; this.width=260;this.height=100;" alt="Логотип фирмы DJI">  
-        </li>
-        <li>
-         <img src="img/logo-sp-passive@2x.jpg" width="260" height="100" 
-          onmouseover="this.src='img/logo-sp-active@2x.jpg'; this.width=260;this.height=100;" 
-          onmouseout="this.src='img/logo-sp-passive@2x.jpg'; this.width=260;this.height=100;" alt="Логотип фирмы SPGadgets"> 
-        </li>
-        <li>
-         <img src="img/logo-gopro-passive@2x.jpg" width="260" height="100" 
-          onmouseover="this.src='img/logo-gopro-active@2x.jpg'; this.width=260;this.height=100;" 
-          onmouseout="this.src='img/logo-gopro-passive@2x.jpg'; this.width=260;this.height=100;" alt="Логотип фирмы GoPro"> 
-        </li>
-        <li>
-         <img src="img/logo-vive-passive@2x.jpg" width="260" height="100" 
-          onmouseover="this.src='img/logo-vive-active@2x.jpg'; this.width=260;this.height=100;" 
-          onmouseout="this.src='img/logo-vive-passive@2x.jpg'; this.width=260;this.height=100;" alt="Логотип фирмы VIVE"> 
+       <div class="container">
+        <ul>
+          <li>
+           <img src="img/logo-dji-passive@2x.jpg" width="260" height="100" 
+            onmouseover="this.src='img/logo-dji-active@2x.jpg'; this.width=260;this.height=100;" 
+            onmouseout="this.src='img/logo-dji-passive@2x.jpg'; this.width=260;this.height=100;" alt="Логотип фирмы DJI">  
+          </li>
+          <li>
+           <img src="img/logo-sp-passive@2x.jpg" width="260" height="100" 
+            onmouseover="this.src='img/logo-sp-active@2x.jpg'; this.width=260;this.height=100;" 
+            onmouseout="this.src='img/logo-sp-passive@2x.jpg'; this.width=260;this.height=100;" alt="Логотип фирмы SPGadgets"> 
+          </li>
+          <li>
+           <img src="img/logo-gopro-passive@2x.jpg" width="260" height="100" 
+            onmouseover="this.src='img/logo-gopro-active@2x.jpg'; this.width=260;this.height=100;" 
+            onmouseout="this.src='img/logo-gopro-passive@2x.jpg'; this.width=260;this.height=100;" alt="Логотип фирмы GoPro"> 
+          </li>
+          <li>
+           <img src="img/logo-vive-passive@2x.jpg" width="260" height="100" 
+            onmouseover="this.src='img/logo-vive-active@2x.jpg'; this.width=260;this.height=100;" 
+            onmouseout="this.src='img/logo-vive-passive@2x.jpg'; this.width=260;this.height=100;" alt="Логотип фирмы VIVE"> 
 
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
     </section>
 <!--    Блок о нас-->
+   <div class="container">
     <section class="index-aboutus">
       <h2>О нас</h2>
       <p>Огромный выбор гаджетов не оставит равнодушным гика,
@@ -252,6 +260,7 @@
       </a>
       <a href="contacts.html" class="btn">Напишите Нам</a>
     </section>
+    </div>
     
 <!--    Модальное окно напишите нам-->
     <section class="modal modal-writeus hidden">

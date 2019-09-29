@@ -15,13 +15,15 @@
 
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
   clip: rect (0 0 0 0 );
   overflow: hidden;
 }
@@ -41,6 +43,11 @@ body {
 
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .main-footer {
@@ -359,7 +366,8 @@ a.catalog-active {
   top: 21px;
 }
 
-.user-navigation {
+.user-navigation,
+.footer-user{
   padding: 0;
   margin: 0;
   margin-left: auto;
@@ -367,7 +375,8 @@ a.catalog-active {
 /*  margin-right: auto;*/
 }
 
-.user-navigation li:last-child {
+.user-navigation li:last-child,
+.footer-user li:last-child {
   margin-left: 20px;
 }
 
@@ -464,16 +473,64 @@ body .hidden {
   width: 160px;
 }
 
+/*=============index-service===============*/
+.service-wrapper {
+  display: flex;
+}
+.service-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 117px;
+  line-height: normal;
+}
+
+.service-list a {
+  margin: 0;
+}
+
+.service-list li:not(:last-of-type) {
+  margin-bottom: 49px;
+}
+/*us-contacts-wrapper*/
+
+.uscontacts-wrapper {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.index-aboutus {
+  width: 462px;
+}
+
+.index-contacts {
+  width: 560px;
+}
+/*============Partners logo=================*/
+.partners-logos {
+  padding-top: 94px;
+  padding-bottom: 93px;
+  box-sizing: border-box;
+}
+
+.partners-logos ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
 /*==============footer============*/
 
 .footer-nav {
   display: flex;
   align-items: center;
-
-}
-
-.footer-user {
-  margin-left: auto;
 }
 
 footer .compare {
@@ -507,13 +564,14 @@ footer .compare {
   margin-top: 70px;
 }
 
+
 .footer-social li:nth-child(2) {
   margin-right: 22px;
   margin-left: 23px;
 }
 
 .footer-social ul {
-  margin-left: 510px;;
+  margin-left: 478px;
 }
 
 .htmlacademy {
