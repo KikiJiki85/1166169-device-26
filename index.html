@@ -26,13 +26,13 @@
         </li>
       </ul>
          <a href="#" class="compare">Сравнить</a>
-         <a href="#">Корзина</a>
+         <a href="#" class="basket">Корзина</a>
     </div>  
 <!--    Нижний блок навигации в header-->
     <nav class="main-navigation">
       <ul class="site-navigation">
         <li>
-          <a href="catalog.html">Каталог товаров</a>
+          <a class="header-catalog" href="catalog.html">Каталог товаров</a>
           <ul class="catalog-navigation hidden">
             <li><a href="#">Виртуальная реальность</a></li>
             <li><a href="#">Моноподы для селфи</a></li>
@@ -58,7 +58,7 @@
       <div class="container">
       <ul class="index-slider">
 <!--         Первый слайд-->
-        <li>
+        <li class="first-slide">
           <div>
             <img src="img/slider-1-png@2x.png" width="384" height="486" alt="Самая длинная палка для селфи">
           </div>
@@ -86,7 +86,7 @@
           </div>
         </li>
 <!--        Второй слайд-->
-        <li class="hidden">
+        <li class="secont-slide hidden">
           <div>
             <img src="img/slider-2-png@2x.png" width="345" height="485" alt="Мотивирующий фитнес-браслет">
           </div>
@@ -110,7 +110,7 @@
           </div>
         </li>
 <!--        Третий слайд-->
-        <li class="hidden">
+        <li class="third-slide hidden">
           <div>
             <img src="img/slider-3-png@2x.png" width="526" height="334" alt="Квадрокоптер с лазером">
           </div>
@@ -135,9 +135,9 @@
 <!--       Переключение слайдера-->  
         <li>
           <ul class="slider-nav">
-          <li><button type="button">1</button></li>
-           <li><button type="button">2</button></li>
-           <li><button type="button">3</button></li>
+          <li><button type="button-slide">1</button></li>
+           <li><button type="button-slide">2</button></li>
+           <li><button type="button-slide">3</button></li>
           </ul> 
         </li> 
       </ul>
@@ -234,7 +234,7 @@
       </div>
     </section>
 <!--    Блок о нас-->
-   <div class="container">
+   <div class="container index-twocolumn">
     <section class="index-aboutus">
       <h2>О нас</h2>
       <p>Огромный выбор гаджетов не оставит равнодушным гика,
@@ -293,11 +293,11 @@
         </a>
         <ul class="footer-user">
           <li>
-            <a href="">Войти</a>
+            <a class="login-link" href="">Войти</a>
           </li>
         </ul>
         <a href="#" class="compare">Сравнить</a>
-        <a href="#">Корзина</a>
+        <a href="#" class="basket">Корзина</a>
       </div>
       <div class="footer-service">
         <p>г.Москва, ул.Строителей, 15</p>
