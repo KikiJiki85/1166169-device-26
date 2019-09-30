@@ -153,11 +153,6 @@ padding: 65px 0px 66px 0px;
   background-position: center;
 }
 
-
-.index-service ul {
-  list-style: none;
-}
-
 .btn:hover,
 .btn:focus {
   background-color: #f0c52e;
@@ -167,11 +162,25 @@ padding: 65px 0px 66px 0px;
   color: rgba(0,0,0,0.3);
 }
 
+.index-service ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
 .index-service a:active {
   color: #f7e184;
   background-color: #000000;
   background-image: none;
+}
+
+.index-service h3,
+.index-service p {
+  margin: 0;
+}
+
+.index-service h3 {
+  margin-bottom: 40px;
 }
 
 .slider-features th {
@@ -671,19 +680,39 @@ body .hidden {
   align-items: center;
   margin-right: 117px;
   line-height: normal;
-  box-sizing: border-box;
 }
 
 .service-list a {
+  box-sizing: border-box;
   margin: 0;
   width: 160px;
   display: block;
+  padding: 14px 23px;
 }
 
-.service-list li:not(:last-of-type) {
-  margin-bottom: 49px;
+.index-service .container {
+  background-color: #e5e5e5;
+  display: flex;
+  background-image: url(../img/services-line.png);
+  background-repeat: no-repeat;
+  background-position: 277px;
 }
-/*us-contacts-wrapper*/
+
+.delivery-slide {
+  width: 436px;
+}
+
+.index-service .service-slides {
+  margin-left: 240px;
+}
+/*
+.service-list li:not(:last-of-type) {
+  margin-bottom: 29px;
+}
+*/
+
+
+/*=============us-contacts=================*/
 
 .uscontacts-wrapper {
   display: flex;
@@ -692,27 +721,33 @@ body .hidden {
 }
 
 .index-aboutus {
-  width: 462px;
+  width: 482px;
 }
 
 .index-contacts {
   width: 560px;
 }
 
-.index-service .container {
-  background-color: #e5e5e5;
-  display: flex;
+.index-contacts p {
+  margin: 0;
+  margin-bottom: 44px;
 }
 
-/*index-about-us*/
+.index-contacts img {
+  margin-bottom: 80px;
+}
 
 .index-twocolumn {
   display: flex;
   justify-content: space-between;
+/*  padding-top: 60px;*/
+  padding-bottom: 85px;
 }
 
-.index-contacts {
-    
+.index-twocolumn h2{
+  margin: 0;
+  margin-top: 51px;
+  margin-bottom: 59px;;
 }
 
 /*============Partners logo=================*/
