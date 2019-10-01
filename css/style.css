@@ -57,7 +57,7 @@ img {
 
 
 /*Заглушка от вываливания при уменьшении окна по ширине*/
-.main-footer .container {
+.footer-wrapper {
 background-color: #464646;
 padding: 65px 0px 66px 0px;
 }
@@ -289,7 +289,9 @@ padding: 65px 0px 66px 0px;
   color: #000000;
 }
 
-footer ul {
+.footer-user,
+.footer-service ul,
+.footer-social ul {
   list-style: none;
 }
 
@@ -713,7 +715,7 @@ body .hidden {
   padding: 14px 23px;
 }
 
-.index-service .container {
+.slider-wrapper {
   background-color: #e5e5e5;
   display: flex;
   background-image: url(../img/services-line.png);
