@@ -176,69 +176,6 @@ padding: 65px 0px 66px 0px;
   font-weight: 300;
 }
 
-.index-catalog ul {
-  list-style: none;  
-}
-
-.index-catalog a {
-  font-family: 'Gilroy', Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 24px;
-  color: #000000;
-  position: relative;
-  padding-top: 200px;
-  display: block;
-  width: 160px;
-}
-
-.index-catalog a::before {
-  content: '';
-  width: 160px;
-  height: 160px;
-  background-repeat: no-repeat;
-  background-color: rgba(240,197,46, 0.5);
-  background-position: center;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-
-.index-catalog li:nth-child(1) a::before {
-  background-image: url(../img/popular-1.svg);
-}
-
-.index-catalog li:nth-child(2) a::before {
-  background-image: url(../img/popular-2.svg);
-  background-position: bottom;
-}
-
-.index-catalog li:nth-child(3) a::before {
-  background-image: url(../img/popular-3.svg);
-}
-
-.index-catalog li:nth-child(4) a::before {
-  background-image: url(../img/popular-4.svg);
-}
-
-.index-catalog li:nth-child(5) a::before {
-  background-image: url(../img/popular-5.svg);
-}
-
-.index-catalog li:nth-child(6) a::before {
-  background-image: url(../img/poppular-6.svg);
-}
-
-.index-catalog a:focus::before,
-.index-catalog a:hover::before {
-  background-color: rgba(240,197,46,1);
-}
-
-.index-catalog a:active::before,
-.index-catalog a:active::before {
-  background-color: rgba(240,197,46,1);
-  
-}
 .partners-logos ul {
   list-style: none;
 }
@@ -665,6 +602,43 @@ body .hidden {
   justify-content: space-between;
   padding-top: 106px;
   padding-bottom: 84px;
+  list-style: none;  
+}
+.index-catalog a {
+  display: block;
+}
+.index-catalog .catalog-partname {
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  color: #000000;
+  position: relative;
+  display: block;
+  width: 160px;
+  margin-top: 39px;
+}
+
+.catalog-img {
+  width: 160px;
+  height: 160px;
+  background-color: rgba(240,197,46, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a:focus .catalog-img,
+a:hover .catalog-img {
+  background-color: rgba(240,197,46,1);
+}
+
+a:active .catalog-img path {
+  fill-opacity: 0.3;
+}
+
+a:active .catalog-partname {
+  opacity: 0.3;
 }
 
 /*=============index-service===============*/
