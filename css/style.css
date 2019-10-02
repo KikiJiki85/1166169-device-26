@@ -197,10 +197,6 @@ padding: 65px 0px 66px 0px;
   font-weight: 300;
 }
 
-.index-service {
-  background-color: #e5e5e5;
-}
-
 .index-catalog ul {
   list-style: none;  
 }
@@ -693,9 +689,11 @@ body .hidden {
 }
 
 /*=============index-service===============*/
-.service-wrapper {
-  display: flex;
+.index-service {
+  background-image: url('../img/services-bg.png');
+  background-repeat: repeat-x;
 }
+
 .service-list {
   margin: 0;
   padding: 0;
@@ -716,15 +714,29 @@ body .hidden {
 }
 
 .slider-wrapper {
-  background-color: #e5e5e5;
   display: flex;
   background-image: url(../img/services-line.png);
   background-repeat: no-repeat;
-  background-position: 277px;
+  background-position: 300px;
+  padding-top: 70px;
+  padding-bottom: 100px;
 }
 
 .delivery-slide {
-  width: 436px;
+  width: 450px;
+  position: relative;
+/*  padding-right: 250px;*/
+}
+
+.delivery-slide::after {
+  content: '';
+  position: absolute;
+  width: 136px;
+  height: 164px;
+  background-image: url(../img/delivery.svg);
+  right: -250px;
+  top: 15px;
+  
 }
 
 .index-service .service-slides {
