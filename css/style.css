@@ -633,7 +633,7 @@ a:hover .catalog-img {
   background-color: rgba(240,197,46,1);
 }
 
-a:active .catalog-img path {
+a:active .catalog-img {
   fill-opacity: 0.3;
 }
 
@@ -861,13 +861,12 @@ footer .compare {
   position: relative;
 }
 
-.footer-social li:nth-child(2) {
-  margin-right: 22px;
-  margin-left: 23px;
+.footer-social li {
+  margin-right: 45px;
 }
 
 .footer-social ul {
-  margin-left: 523px;
+  margin-left: 533px;
 }
 
 .footer-social::before {
@@ -886,6 +885,33 @@ footer .compare {
 .social-button:hover,
 .social-button:active{
   opacity: 0.6;
+}
+
+.social-button.facebook::after {
+  content: '';
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  background-image: url(../img/facebook.svg);
+  background-repeat: no-repeat;
+}
+
+.social-button.instagram::after {
+  content: '';
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  background-image: url(../img/instagram.svg);
+  background-repeat: no-repeat;
+}
+
+.social-button.twitter::after {
+  content: '';
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  background-image: url(../img/twitter.svg);
+  background-repeat: no-repeat;
 }
 
 .social-button:active {
