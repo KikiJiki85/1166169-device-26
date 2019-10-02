@@ -162,27 +162,6 @@ padding: 65px 0px 66px 0px;
   color: rgba(0,0,0,0.3);
 }
 
-.index-service ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.index-service a:active {
-  color: #f7e184;
-  background-color: #000000;
-  background-image: none;
-}
-
-.index-service h3,
-.index-service p {
-  margin: 0;
-}
-
-.index-service h3 {
-  margin-bottom: 40px;
-}
-
 .slider-features th {
   font-size: 13px;
   line-height: 20px;
@@ -694,15 +673,53 @@ body .hidden {
   background-repeat: repeat-x;
 }
 
+.index-service ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.index-service a:active {
+  color: #f7e184;
+  background-color: #000000;
+  background-image: none;
+}
+
+.index-service h3,
+.index-service p {
+  margin: 0;
+}
+
+.index-service h3 {
+  margin-bottom: 40px;
+}
+
 .service-list {
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
   margin-right: 117px;
-  line-height: normal;
+}
+
+.service-slides {
+  position: relative
+}
+
+.service-slides h3 {
+  color: #000000;
+}
+
+.service-slides::before {
+  content: '';
+  position: absolute;
+  width: 7px;
+  height: 319px;
+  background-color: #000000;
+  top: -75px;
+  left: -145px;
 }
 
 .service-list a {
@@ -713,11 +730,12 @@ body .hidden {
   padding: 14px 23px;
 }
 
+.service-list li {
+/*  margin-bottom: 40px;*/
+}
+
 .slider-wrapper {
   display: flex;
-  background-image: url(../img/services-line.png);
-  background-repeat: no-repeat;
-  background-position: 300px;
   padding-top: 70px;
   padding-bottom: 100px;
 }
@@ -740,7 +758,18 @@ body .hidden {
 }
 
 .index-service .service-slides {
-  margin-left: 240px;
+  margin-left: 140px;
+}
+
+.index-service .active-tab {
+  width: 278px;
+  height: 40px;
+  background-image: none;
+  background-color: #000000;
+  color: #f0c52e;
+  text-align: left;
+  padding: 14px 137px 11px 19px;
+  line-height: 16px;
 }
 /*
 .service-list li:not(:last-of-type) {
@@ -759,6 +788,16 @@ body .hidden {
 
 .index-aboutus {
   width: 482px;
+  position: relative;
+}
+.index-contacts h2::before,
+.index-aboutus h2::before {
+  content: '';
+  width: 80px;
+  height: 7px;
+  position: absolute;
+  background-color: #000000;
+  top: -51px;
 }
 
 .index-aboutus ul {
@@ -768,6 +807,7 @@ body .hidden {
 
 .index-contacts {
   width: 560px;
+  position: relative;
 }
 
 .index-aboutus p,
@@ -783,14 +823,13 @@ body .hidden {
 .index-twocolumn {
   display: flex;
   justify-content: space-between;
-/*  padding-top: 60px;*/
   padding-bottom: 85px;
 }
 
 .index-twocolumn h2{
   margin: 0;
-/*  margin-top: 51px;*/
-  margin-bottom: 59px;;
+  margin-bottom: 59px;
+  color: #000000;
 }
 
 /*============Partners logo=================*/
@@ -845,6 +884,7 @@ footer .compare {
 .footer-social {
   display: flex;
   margin-top: 70px;
+  position: relative;
 }
 
 .footer-social li:nth-child(2) {
@@ -854,6 +894,15 @@ footer .compare {
 
 .footer-social ul {
   margin-left: 523px;
+}
+
+.footer-social::before {
+  content: '';
+  width: 80px;
+  height: 7px;
+  background-color: #ffc600;
+  position: absolute;
+  top: 10px;
 }
 
 .social-button {
