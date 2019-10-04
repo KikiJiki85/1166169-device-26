@@ -554,7 +554,7 @@ form.search-field
 }
 
 
-/*============flex main slider===============*/
+/*============ main slider===============*/
 .index-slider {
   box-sizing: border-box;
   margin: 0;
@@ -571,13 +571,7 @@ body .hidden {
   display: none;
 }
 
-.slider-nav {
-  padding: 0;
-  display: flex;
-  position: absolute;
-  right: 83px;
-  bottom: 100px;
-}
+
 
 .first-slide {
   background-image: url('../img/01.png');
@@ -590,6 +584,41 @@ body .hidden {
   height: 486px;
   margin-left: 90px;
   margin-right: 125px;
+}
+
+.slider-nav {
+  padding: 0;
+  display: flex;
+  position: absolute;
+  right: 83px;
+  bottom: 100px;
+}
+
+
+.button-slide {
+  border: none;
+}
+
+.slider-nav button {
+  position: relative;
+  display: flex; 
+  margin-left: 10px;
+}
+
+.slider-nav .button-active::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background-image: url('../img/slider-button-active.png');
+  background-repeat: no-repeat;
+}
+
+.button-slide::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background-image: url('../img/slider-button-empty.png');
+  background-repeat: no-repeat; 
 }
 
 
