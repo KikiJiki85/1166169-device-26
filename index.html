@@ -22,7 +22,7 @@
        
       <ul class="user-navigation">
         <li>
-          <a class="login-link" href="#">Войти</a>
+          <a class="login-link" href="login.html">Войти</a>
         </li>
       </ul>
          <a href="#" class="compare">Сравнить</a>
@@ -135,9 +135,13 @@
 <!--       Переключение слайдера-->  
         <li>
           <ul class="slider-nav">
-          <li><button type="button-slide">1</button></li>
-           <li><button type="button-slide">2</button></li>
-           <li><button type="button-slide">3</button></li>
+            <li>
+              <button class="button-slide button-active">
+                <span class="visually-hidden">1</span>
+              </button>
+            </li>
+           <li><button class="button-slide"><span class="visually-hidden">2</span></button></li>
+           <li><button class="button-slide"><span class="visually-hidden">3</span></button></li>
           </ul> 
         </li> 
       </ul>
@@ -320,7 +324,7 @@
       <h2>Контакты</h2>
       <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
       проверить работоспособность покупки. Всякое бывает.</p>
-      <a href="maps.google.com">
+      <a href="maps.google.com" class="modal-map">
         <img src="img/map-jpg@2x.jpg" width="560" height="222" alt="Карта проезда к офису интернет-магазина DEVICE по адресу улица Строителей, 15 ">
       </a>
       <a href="contacts.html" class="btn">Напишите Нам</a>
@@ -339,14 +343,14 @@
        <textarea name="text" id="user-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
        <button type="submit">Отправить</button>
      </form>
-     <button class="modal-close" type="button" aria-label="Закрыть окно">X</button>
+     <button class="modal-close123" type="button" aria-label="Закрыть окно">X</button>
     </section>
     
     <!--  Модальное окно большой карты-->
-    <section class="hidden">
+    <section class="modal-bigmap hidden">
       <h2 class="visually-hidden">Большая карта проезда к офису интернет-магазина DEVICE по адресу улица Строителей,15</h2>
       <img src="img/map-big-jpg@2x.jpg" width="960" height="559" alt="Карта проезда к офису интернет-магазина DEVICE по адресу улица Строителей, 15">
-      <button type="button" aria-label="Закрыть окно">X</button>
+      <button class="modal-close" type="button" aria-label="Закрыть окно">X</button>
     </section>
   </main>
   
@@ -358,7 +362,7 @@
         </a>
         <ul class="footer-user">
           <li>
-            <a class="login-link" href="">Войти</a>
+            <a class="login-link" href="login.html">Войти</a>
           </li>
         </ul>
         <a href="#" class="compare">Сравнить</a>
@@ -398,5 +402,21 @@
       </div>
     </div>
   </footer>
+    <script>
+      var link = document.querySelector(".modal-map");
+      var popup = document.querySelector(".modal-bigmap");
+      var close = document.querySelector(".modal-close");
+      
+      link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("hidden");
+      });
+      
+      close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("hidden");
+      });
+      
+    </script>
   </body>
 </html>
