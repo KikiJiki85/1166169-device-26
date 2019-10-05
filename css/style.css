@@ -897,6 +897,7 @@ footer .compare {
   display: flex;
   justify-content: space-between;
   padding-left: 60px;
+  margin-top: 49px;
 }
 
 .filter-form fieldset {
@@ -933,6 +934,7 @@ footer .compare {
   color: #000000;
 }
 
+
 .filter-input:disabled + label {
   color: #a6a6a6;
 }
@@ -940,19 +942,57 @@ footer .compare {
 .sorting {
   display: flex;
   align-items: center;
+  background-color: #ebebeb;
+  padding-top: 30px;
+  padding-bottom: 31px;;
 }
 
 .filters h2,
 .sorting h2 {
   margin: 0;
   text-transform: uppercase;
+  color: #000000;
+}
+
+.sorting h2 {
+  margin-right: 56px;
 }
 
 .sorting ul {
   list-style: none;
-  padding: 0;
   display: flex;
   margin: 0;
+  padding: 0;
+  width: 559px;
+}
+
+.sorting li:nth-child(2) {
+  margin-right: 31px;
+  margin-left: 29px;
+}
+
+.sorting li:nth-child(4) {
+  margin-right: 19px;
+  margin-left: auto;
+}
+
+
+.sorting a {
+  display: flex;
+}
+
+.sort-up::after{
+  content: '';
+  width: 11px;
+  height: 10px;
+  background-image: url('../img/icon-up-dir.svg');
+}
+
+.sort-down::after{
+  content: '';
+  width: 11px;
+  height: 10px;
+  background-image: url('../img/icon-down-dir.svg');
 }
 
 .sorting a {
@@ -964,24 +1004,60 @@ footer .compare {
   opacity: 0.3;
 }
 
-.catalog-breadcrumbs a {
+.catalog-pagination {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 760px;
+  background-color: #ebebeb;
+  box-sizing: border-box;
+  padding: 31px 29px 29px 31px;
+  margin-bottom: 77px;
+}
+
+.catalog-pagination a {
   color: #000000;
+}
+
+.catalog-pagination ul {
+  display: flex;
+  list-style: none;
+}
+
+.prev-page,
+.next-page {
+  text-transform: uppercase;
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 3.2px;
+}
+
+.pag-numbers a {
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-weight: 800;
   opacity: 0.3;
 }
 
-a.catalog-active {
+.pag-numbers li {
+  margin-right: 31px;
+}
+
+.pag-numbers .pag-active {
   opacity: 1;
 }
 
-.catalog-list,
-.catalog-breadcrumbs{
+.catalog-list{
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between
+  justify-content: space-between;
 }
+
 
 .catalog-item {
   width: 360px;

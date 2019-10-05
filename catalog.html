@@ -111,16 +111,17 @@
        <button type="submit" class="btn">Показать</button>
       </form>
     </section> 
-      <section class="catalog">
+      <section class="catalog-inner">
      <h3 class="visually-hidden">Список моноподов для селфи</h3>
       <div class="sorting">
        <h2>Сортировка:</h2>
         <ul>
-          <li><a href="#" class="catalog-active">По цене</a></li>
+          <li><a href="#" class="sorting-active">По цене</a></li>
           <li><a href="#">По типу</a></li>
           <li><a href="#">По популярности</a></li>
-          <li><a href="#">По возрастанию</a></li>
-          <li><a href="#" class="catalog-active">По убыванию</a></li>
+          
+          <li><a href="#" class="sort-up"><span class="visually-hidden">По возрастанию</span></a></li>
+          <li><a href="#" class="sort-down sorting-active"><span class="visually-hidden">По убыванию</span></a></li>
         </ul>
       </div>
       <h2 class="visually-hidden">Список моноподов для селфи</h2>
@@ -154,13 +155,17 @@
         <p>4900 руб.</p>
         </li>
       </ul>
-      <button type="button" class="btn">Назад</button>
-      <ul class="catalog-breadcrumbs">
-        <li><a class="catalog-active">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
+      
+      <ul class="catalog-pagination">
+        <li><a href="#" class="prev-page">Назад</a></li>
+        <li>
+          <ul class="pag-numbers">
+            <li><a class="pag-active">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+          </ul>
+        <li><a href="" class="next-page">Вперед</a></li>
       </ul>
-      <button type="button" class="btn">Вперед</button>
     </section>
     </div>
     
