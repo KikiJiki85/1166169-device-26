@@ -63,12 +63,21 @@
       <h2>Фильтр:</h2>
       <!-- Форму фильтра разметим позже -->
       <form class="filter-form" method="post" action=https://echo.htmlacademy.ru>
-        <fieldset>
+       <fieldset class="filter-range">
        <legend>Стоимость</legend>
-         <label for="min-price">от</label>
-         <input type="number" min="0" value="0" id="min-price" name="min-price">
-         <label for="max-price">до</label>
-         <input type="number" max="10000" value="5000" id="max-price" name="max-price"> 
+          <div class="range-controls"> 
+           <div class="scale">
+             <div class="bar"></div>
+           </div>
+           <div class="range-toggle range-toggle-min"></div>
+           <div class="range-toggle range-toggle-max"></div>
+          </div>
+          <div class="price-controls">
+           <label for="min-price">от</label>
+           <input type="number" min="0" value="0" id="min-price" name="min-price">
+           <label for="max-price">до</label>
+           <input type="number" max="10000" value="5000" id="max-price" name="max-price">
+         </div>
        </fieldset>
        <fieldset>
          <legend>Цвет</legend>
