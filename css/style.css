@@ -1331,3 +1331,36 @@ footer .compare {
   left: -33px;
 }
 
+.modal {
+  color: #000000;
+  background-color: #ffffff;
+  position: fixed;
+  box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
+}
+
+.modal-writeus {
+  width: 760px;
+  padding: 99px 100px;
+  top: 230px;
+  left: 50%;
+  margin-left: -480px;
+}
+
+.modal-close {
+  width: 55px;
+  height: 55px;
+  background-color: #ffffff;
+  background-image: url(../img/modal-close.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.5;
+  border: 0; 
+  cursor: pointer;
+  position: absolute;
+  top: 22px;
+  right: 22px;
+}
+
+/*Проверить критерии : Б9, Pixyl Perfect */
+
+
