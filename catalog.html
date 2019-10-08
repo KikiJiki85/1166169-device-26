@@ -58,11 +58,13 @@
       <li><a href="#">Каталог товаров</a></li>
       <li><a class="breadcrumbs-current">Моноподы для селфи</a></li>
     </ul>
+    
     <div class="inner-twocolumn">
       <section class="filters">
       <h2>Фильтр:</h2>
-      <!-- Форму фильтра разметим позже -->
+      <!-- Форма фильтра-->
       <form class="filter-form" method="post" action=https://echo.htmlacademy.ru>
+      
        <fieldset class="filter-range">
        <legend>Стоимость</legend>
           <div class="range-controls"> 
@@ -74,45 +76,47 @@
           </div>
           <div class="price-controls">
            <label for="min-price">от</label>
-           <input type="number" min="0" value="0" id="min-price" name="min-price">
+           <input type="text" min="0" value="0" id="min-price" name="min-price">
            <label for="max-price">до</label>
-           <input type="number" max="10000" value="5000" id="max-price" name="max-price">
+           <input type="text" max="10000" value="5000" id="max-price" name="max-price">
          </div>
        </fieldset>
-       <fieldset>
+       
+       <fieldset class="filter-color">
          <legend>Цвет</legend>
          <ul>
            <li class="filter-option">
-             <input type="checkbox" name="black" id="black" class="filter-input" checked>
+             <input type="checkbox" name="black" id="black" class="filter-input filter-input-checkbox visually-hidden" checked>
              <label for="black">Черный</label>
            </li>
            <li class="filter-option">
-             <input type="checkbox" name="white" id="white" class="filter-input">
+             <input type="checkbox" name="white" id="white" class="filter-input filter-input-checkbox visually-hidden">
              <label for="white">Белый</label>
            </li>
            <li class="filter-option"> 
-             <input type="checkbox" name="blue" id="blue" class="filter-input" checked disabled>
+             <input type="checkbox" name="blue" id="blue" class="filter-input filter-input-checkbox visually-hidden" checked disabled>
              <label for="blue">Синий</label>
            </li>
            <li class="filter-option">
-             <input type="checkbox" name="red" id="red" class="filter-input" checked>
+             <input type="checkbox" name="red" id="red" class="filter-input filter-input-checkbox visually-hidden" checked>
              <label for="red">Красный</label>
            </li>
            <li class="filter-option">
-             <input type="checkbox" name="rose" id="rose" class="filter-input">
+             <input type="checkbox" name="rose" id="rose" class="filter-input filter-input-checkbox visually-hidden ">
              <label for="rose">Розовый</label>
            </li>
          </ul>
        </fieldset>
-       <fieldset>
+       
+       <fieldset class="filter-bluetooth">
         <legend>Bluetooth</legend>
            <ul>
-           <li>
-             <input type="radio" name="bluetooth" id="bluetooth-yes" value="yes" checked>
+           <li class="filter-option">
+             <input type="radio" name="bluetooth" id="bluetooth-yes" value="yes" class="filter-input filter-input-radio visually-hidden" checked>
              <label for="bluetooth-yes">Есть</label>
            </li>
-           <li>
-             <input type="radio" name="bluetooth" id="bluetooth-no" value="no">
+           <li class="filter-option">
+             <input type="radio" name="bluetooth" id="bluetooth-no" value="no" class="filter-input filter-input-radio visually-hidden">
              <label for="bluetooth-no">Нет</label>
            </li>
          </ul>
@@ -120,7 +124,8 @@
        <button type="submit" class="btn">Показать</button>
       </form>
     </section> 
-      <section class="catalog-inner">
+  
+    <section class="catalog-inner">
      <h3 class="visually-hidden">Список моноподов для селфи</h3>
       <div class="sorting">
        <h2>Сортировка:</h2>

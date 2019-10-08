@@ -15,7 +15,9 @@
 
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -1068,18 +1070,11 @@ footer .compare {
   justify-content: space-between;
 }
 
-
 .catalog-item {
   width: 360px;
   display: flex;
   flex-direction: column;
 }
-
-.catalog-item h3 {
-  order: 1;
-  
-}
-
 
 .catalog-item a {
   font-family: 'Gilroy', Arial, sans-serif;
@@ -1131,7 +1126,7 @@ footer .compare {
 }
 
 .price-controls {
-  margin-bottom: 100px;
+  margin-bottom: 0px;
   font-size: 0;
 }
 
@@ -1159,6 +1154,7 @@ footer .compare {
   border: none;
   vertical-align: top;
   margin-right: 20px;
+  margin-bottom: 41px;
 }
 
 .range-controls {
@@ -1200,8 +1196,105 @@ footer .compare {
 .range-toggle-max {
   left: 110px;
 }
- 
+
+.filter-color,
+.filter-bluetooth {
+  width: 201px;
+  color: #000000;
+  font-size: 14px;
+}
+
+.filter-color ul,
+.filter-bluetooth ul {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.filter-color legend,
+.filter-bluetooth legend {
+  padding-top: 18px;
+  margin-bottom: 29px;
+  position: relative;
+}
+
+.filter-color legend::before,
+.filter-bluetooth legend::before {
+  content: '';
+  position: absolute;
+  width: 201px;
+  height: 2px;
+  background-color: #000000;
+  top: 0px;
+}
+
+.filter-option {
+/*
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
+*/
+  margin-bottom: 10px;
+  padding-left: 40px;
+}
+
+.filter-option label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input-checkbox+label::before {
+  content: '';
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  top: 3px;
+  left: -33px;
+  background-image: url('../img/checkbox-off.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:checked+label::after {
+  content: '';
+  width: 27px;
+  height: 23px;
+  position: absolute;
+  top: 3px;
+  left: -33px;
+  background-image: url('../img/checkbox-on.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
 
 
+.filter-input-checkbox:disabled+label::after,
+.filter-input-checkbox:disabled+label::before {
+  opacity: 0.25;
+}
 
+.filter-input-radio+label::before {
+  content: '';
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background-image: url('../img/radio-off.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: 2px;
+  left: -33px;
+}
+
+.filter-input-radio:checked+label::before {
+  content: '';
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background-image: url('../img/radio-on.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: 2px;
+  left: -33px;
+}
 
