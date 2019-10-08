@@ -188,7 +188,8 @@ padding: 65px 0px 66px 0px;
 
 .index-service h3,
 .index-aboutus h2,
-.index-contacts h2{
+.index-contacts h2,
+.inner-page h1{
   font-family: 'Gilroy', Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
@@ -877,6 +878,13 @@ footer .compare {
   display: none;
 }
 
+.inner-page h1 {
+  margin: 0;
+  margin-left: 60px;
+  margin-top: 44px;
+  margin-bottom: 30px;;
+  color: #000000;
+}
 
 .inner-page button {
   background-color: #ffffff;
