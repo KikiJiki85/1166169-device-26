@@ -490,6 +490,7 @@ body .hidden {
 
 .button-slide {
   border: none;
+  cursor: pointer;
 }
 
 .slider-nav button {
