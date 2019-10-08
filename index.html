@@ -334,20 +334,20 @@
 <!--    Модальное окно напишите нам-->
     <section class="modal modal-writeus hidden">
       <h2 class="visually-hidden">Напишите Нам форма отправки</h2>
-     <form  method="post" action=https://echo.htmlacademy.ru>
+     <form  method="post" action=https://echo.htmlacademy.ru class="writeus">
        <label for="user-name">Ваше имя:</label>
        <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
        <label for="user-email">Ваш e-mail:</label>
        <input id="user-email" type="text" name="email" placeholder="email@example.com">
        <label for="user-text">Текст письма:</label>
        <textarea name="text" id="user-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-       <button type="submit">Отправить</button>
+       <button type="submit" class="btn">Отправить</button>
      </form>
-     <button class="modal-close" type="button" aria-label="Закрыть окно">Закрыть</button>
+      <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
     
     <!--  Модальное окно большой карты-->
-    <section class="modal-bigmap hidden">
+    <section class="modal modal-bigmap hidden">
       <h2 class="visually-hidden">Большая карта проезда к офису интернет-магазина DEVICE по адресу улица Строителей,15</h2>
       <img src="img/map-big-jpg@2x.jpg" width="960" height="559" alt="Карта проезда к офису интернет-магазина DEVICE по адресу улица Строителей, 15">
       <button class="modal-close" type="button" aria-label="Закрыть окно">Закрыть</button>
