@@ -416,6 +416,7 @@ form.search-field
 /*main-navigation*/
 .site-navigation {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
@@ -523,6 +524,7 @@ body .hidden {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   box-sizing: border-box;
   justify-content: space-between;
   padding-top: 106px;
@@ -914,9 +916,31 @@ footer .compare {
 
 .inner-twocolumn {
   display: flex;
-/*  justify-content: space-between;*/
   margin-top: 49px;
 }
+
+
+.wrapper-decor::before {
+  content: '';
+  width: 100%;
+  height: 71px;
+  position: absolute;
+  background-color: rgba(235,235,235,1);
+  z-index: -1;
+  left: 0;
+}
+
+.wrapper-decor::after {
+  content: '';
+  width: 100%;
+  height: 1350px;
+  position: absolute;
+  background-color: rgba(235,235,235,1);
+  z-index: -1;
+  right: calc(50% + 255px);
+}
+
+
 
 .filter-form fieldset {
   border: none;
@@ -966,9 +990,10 @@ footer .compare {
   flex-wrap: wrap;
   align-items: center;
   background-color: #ebebeb;
-  padding-top: 30px;
-  padding-bottom: 31px;
+  padding-top: 23px;
+  padding-bottom: 24px;
   padding-left: 74px;
+  box-sizing: border-box;
 }
 
 .filters h2,
@@ -1302,6 +1327,13 @@ footer .compare {
   background-position: 0 0;
 }
 
+/*============Доступный кастомный чекбокс ============*/
+.filter-color input[type="checkbox"]:focus+label,
+.filter-bluetooth input[type="radio"]:focus+label {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
 
 .filter-input-checkbox:disabled+label::after,
 .filter-input-checkbox:disabled+label::before {
@@ -1352,10 +1384,10 @@ footer .compare {
 .modal-close {
   width: 55px;
   height: 55px;
-  background-color: #ffffff;
   background-image: url(../img/modal-close.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: transparent;
   opacity: 0.5;
   border: 0; 
   cursor: pointer;
@@ -1432,7 +1464,15 @@ footer .compare {
   outline: solid 3px #f0c52e;
 }
 
-
+.modal-bigmap {
+  width: 960px;
+  height: 559px;
+  top: 50%;
+  left: 50%;
+  margin-left: -480px;
+  margin-top: -280px;
+  
+}
 
 /*Проверить критерии : Б9, Pixyl Perfect */
 
