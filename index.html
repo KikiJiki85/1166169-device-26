@@ -50,7 +50,6 @@
   </header>
  
   <main>
-<!--   Спрятать h1 при верстке-->
     <h1 class="visually-hidden">Интернет-магазин гаджетов DEVICE</h1>
 <!--      Начало слайдера-->
     <section>
@@ -332,15 +331,21 @@
     </div>
     
 <!--    Модальное окно напишите нам-->
-    <section class="modal modal-writeus hidden">
+    <section class="modal modal-writeus ">
       <h2 class="visually-hidden">Напишите Нам форма отправки</h2>
      <form  method="post" action=https://echo.htmlacademy.ru class="writeus">
-       <label for="user-name">Ваше имя:</label>
-       <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
-       <label for="user-email">Ваш e-mail:</label>
-       <input id="user-email" type="text" name="email" placeholder="email@example.com">
+       <div class="modal-twocolumns">
+         <div class="name-writeus">       
+           <label for="user-name">Ваше имя:</label>
+           <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+         </div> 
+         <div class="email-writeus">
+           <label for="user-email">Ваш e-mail:</label>
+           <input id="user-email" type="text" name="email" placeholder="email@example.com">
+         </div>
+       </div>
        <label for="user-text">Текст письма:</label>
-       <textarea name="text" id="user-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+       <textarea name="text" id="user-text" cols="30" rows="5" placeholder="В свободной форме"></textarea>
        <button type="submit" class="btn">Отправить</button>
      </form>
       <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
@@ -406,6 +411,7 @@
       var link = document.querySelector(".modal-map");
       var popup = document.querySelector(".modal-bigmap");
       var close = document.querySelector(".modal-close");
+      var writeus = document.querySelector(".modal-writeus");
       
       link.addEventListener("click", function (evt) {
         evt.preventDefault();
@@ -415,6 +421,11 @@
       close.addEventListener("click", function (evt) {
         evt.preventDefault();
         popup.classList.add("hidden");
+      });
+      
+       close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        writeus.classList.add("hidden");
       });
       
     </script>

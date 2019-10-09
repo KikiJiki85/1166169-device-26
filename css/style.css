@@ -153,6 +153,7 @@ padding: 65px 0px 66px 0px;
   background-image: url('../img/btnback.png');
   background-repeat: no-repeat;
   background-position: center;
+  border: 0;
 }
 
 .filter-form .btn {
@@ -1339,11 +1340,13 @@ footer .compare {
 }
 
 .modal-writeus {
-  width: 760px;
+  box-sizing: border-box;
+  width: 960px;
   padding: 99px 100px;
   top: 230px;
   left: 50%;
   margin-left: -480px;
+  height: 553px;
 }
 
 .modal-close {
@@ -1360,6 +1363,76 @@ footer .compare {
   top: 22px;
   right: 22px;
 }
+
+.modal-close:hover,
+.modal-close:focus {
+  opacity: 1;
+}
+
+.modal-close:active {
+  opacity: 0.3;
+}
+
+.writeus {
+  display: flex;
+  flex-direction: column;
+}
+
+.writeus .btn {
+  align-self: flex-start
+}
+
+.name-writeus,
+.email-writeus {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+}
+
+.modal-twocolumns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.writeus label {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: normal;
+  margin-bottom: 13px;
+}
+
+.writeus input[type="text"],
+.writeus textarea {
+  font: inherit;
+  background-color: #f2f2f2;
+  border: none;
+  font-size: 14px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 20px;
+  margin-bottom: 39px;
+  line-height: 18px;
+}
+
+.writeus input::placeholder,
+.writeus textarea::placeholder {
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.writeus input:hover,
+.writeus textarea:hover {
+ background-color: #eaeaea;
+}
+
+.writeus input:focus,
+.writeus textarea:focus {
+  background-color: #ffffff;
+  outline: solid 3px #f0c52e;
+}
+
+
 
 /*Проверить критерии : Б9, Pixyl Perfect */
 
