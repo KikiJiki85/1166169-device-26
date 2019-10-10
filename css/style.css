@@ -789,6 +789,41 @@ a:active .catalog-partname {
   display: flex;
   justify-content: space-between;
 }
+.partners-logos li:nth-child(1) {
+  background-image: url(../img/logo-dji-passive@2x.jpg);
+  background-repeat: no-repeat;
+  background-size: 260px 100px;
+  background-position: 0 0;
+}
+
+.partners-logos li:nth-child(2) {
+  background-image: url(../img/logo-sp-passive@2x.jpg);
+  background-repeat: no-repeat;
+  background-size: 260px 100px;
+  background-position: 0 0;
+}
+
+.partners-logos li:nth-child(3) {
+  background-image: url(../img/logo-gopro-passive@2x.jpg);
+  background-repeat: no-repeat;
+  background-size: 260px 100px;
+  background-position: 0 0;
+}
+
+.partners-logos li:nth-child(4) {
+  background-image: url(../img/logo-vive-passive@2x.jpg);
+  background-repeat: no-repeat;
+  background-size: 260px 100px;
+  background-position: 0 0;
+}
+
+.partners-logos img {
+  opacity: 0;
+}
+
+.partners-logos li:hover img{
+  opacity: 1;
+}
 
 
 
