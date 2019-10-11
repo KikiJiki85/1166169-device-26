@@ -1145,6 +1145,15 @@ footer .compare {
   opacity: 0.3;
 }
 
+.sorting a:hover,
+.sorting a:focus {
+  opacity: 0.6;
+}
+
+.sorting a:active {
+  opacity: 1;
+}
+
 .sorting .sorting-active {
   opacity: 1;
 }
@@ -1361,17 +1370,19 @@ footer .compare {
 .range-toggle {
   position: absolute;
   top: -9px;
-  width: 4px;
-  height: 4px;
-  background-color: #ababab;
-  border: 8px solid #ffffff;
-  border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0,1,1,0.2);
+  width: 20px;
+  height: 22px;
+  background-image: url(../img/filter-button.svg);
+  background-repeat: no-repeat;
   cursor: pointer;
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+/*  background: #1c4f80;*/
+  width: 22px;
+  height: 24px;
+  background-image: url(../img/filter-button-hover.png);
+  background-repeat: no-repeat;
 }
 
 .range-toggle-min {
@@ -1414,10 +1425,6 @@ footer .compare {
 }
 
 .filter-option {
-/*
-  background: rgba(0, 128, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
-*/
   margin-bottom: 10px;
   padding-left: 40px;
 }
@@ -1453,6 +1460,21 @@ footer .compare {
   background-position: 0 0;
 }
 
+.filter-input-checkbox:checked:not([disabled])+label:hover::after,
+.filter-input-checkbox+label:hover::before {
+  opacity: 0.6;
+}
+
+.filter-color input[type="checkbox"]:focus+label:before,
+.filter-color input[type="checkbox"]:checked:focus+label:after{
+  opacity: 0.6;
+}
+
+.filter-input-checkbox:checked:not([disabled])+label:active::after,
+.filter-input-checkbox+label:active::before {
+  opacity: 1;
+}
+
 /*============Доступный кастомный чекбокс ============*/
 .filter-color input[type="checkbox"]:focus+label,
 .filter-bluetooth input[type="radio"]:focus+label {
@@ -1462,9 +1484,11 @@ footer .compare {
 }
 
 .filter-input-checkbox:disabled+label::after,
-.filter-input-checkbox:disabled+label::before {
+.filter-input-checkbox:disabled+label::before,
+.filter-input-radio:disabled+label::before{
   opacity: 0.25;
 }
+
 
 .filter-input-radio+label::before {
   content: '';
@@ -1489,6 +1513,19 @@ footer .compare {
   top: 2px;
   left: -33px;
 }
+
+.filter-input-radio:hover:not([disabled])+label::before {
+  opacity: 0.6;
+}
+
+.filter-input-radio:not([disabled]):active+label::before {
+  opacity: 1;
+}
+
+.filter-bluetooth input[type="radio"]:focus+label::before {
+  opacity: 0.6;
+}
+
 
 .modal {
   color: #000000;
