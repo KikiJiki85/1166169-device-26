@@ -1167,7 +1167,7 @@ footer .compare {
   width: 760px;
   background-color: #ebebeb;
   box-sizing: border-box;
-  padding: 31px 29px 29px 31px;
+/*  padding: 31px 29px 29px 31px;*/
   margin-bottom: 77px;
   margin-left: 73px;
 }
@@ -1176,9 +1176,11 @@ footer .compare {
   color: #000000;
 }
 
-.catalog-pagination ul {
+.catalog-pagination .pag-numbers {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
+  margin-top: 31px;
 }
 
 .prev-page,
@@ -1188,12 +1190,36 @@ footer .compare {
   font-size: 16px;
   font-weight: 800;
   letter-spacing: 3.2px;
+  padding: 31px 29px 29px 31px;
+  display: block;
+}
+
+.prev-page:hover,
+.prev-page:focus,
+.next-page:hover,
+.next-page:focus {
+  background-color: #d9d9d9;
+}
+
+.prev-page:active,
+.next-page:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .pag-numbers a {
   font-family: 'Gilroy', Arial, sans-serif;
   font-weight: 800;
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pag-numbers a:hover:not(.pag-active),
+.pag-numbers a:focus:not(.pag-active) {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+
+.pag-numbers a:active:not(.pag-active) {
+  color: #000000;
 }
 
 .pag-numbers li {
@@ -1201,7 +1227,7 @@ footer .compare {
 }
 
 .pag-numbers .pag-active {
-  opacity: 1;
+  color: rgba(0, 0, 0, 1);
 }
 
 .catalog-list {
@@ -1252,8 +1278,17 @@ footer .compare {
   letter-spacing: 0.13px;
   text-align: center;
   color: rgba(0, 0, 0, 0.5);
-
 }
+
+.cart-compare a:last-of-type:hover,
+.cart-compare a:last-of-type:focus {
+  opacity: 1;
+}
+
+.cart-compare a:last-of-type:active {
+  opacity: 0.2;
+}
+
 
 .item-wrapper {
   display: flex;
