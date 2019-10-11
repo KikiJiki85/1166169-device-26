@@ -16,8 +16,8 @@
        </a>
 <!--       Форма поиска по сайту-->
        <form class="search-field" method="get" action=https://echo.htmlacademy.ru >
-         <input type="search" name="search" placeholder="Поиск по сайту" aria-label="Поле поиска по сайту">
-         <button type="submit" class="">Найти</button>
+         <input type="search" name="search" placeholder="Поиск по сайту" class="search" aria-label="Поле поиска по сайту">
+         <button type="submit" class="search-btn">Найти</button>
        </form>
        
       <ul class="user-navigation">
@@ -254,9 +254,9 @@
       <h2 class="visually-hidden">Доставка, Гарантия, Кредит</h2>
       <div class="container slider-wrapper">
        <ul class="service-list">
-         <li><a href="#" class="btn active-tab">Доставка </a></li>
-         <li><a href="#" class="btn">Гарантия</a></li>
-         <li><a href="#" class="btn"> Кредит</a></li>
+         <li><button type="button" href="#" class="btn active-tab">Доставка </button></li>
+         <li><button type="button" href="#" class="btn">Гарантия</button></li>
+         <li><button type="button" href="#" class="btn"> Кредит</button></li>
        </ul>
        <ul class="service-slides">
 <!--        Первый слайд -->
@@ -323,7 +323,7 @@
     </div>
     
 <!--    Модальное окно напишите нам-->
-    <section class="modal modal-writeus ">
+    <section class="modal modal-writeus hidden">
       <h2 class="visually-hidden">Напишите Нам форма отправки</h2>
      <form  method="post" action=https://echo.htmlacademy.ru class="writeus">
        <div class="modal-twocolumns">
@@ -340,7 +340,7 @@
        <textarea name="text" id="user-text" cols="30" rows="5" placeholder="В свободной форме"></textarea>
        <button type="submit" class="btn">Отправить</button>
      </form>
-      <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+      <button class="" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
     
     <!--  Модальное окно большой карты-->
