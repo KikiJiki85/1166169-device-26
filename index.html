@@ -62,7 +62,7 @@
 <!--      Начало слайдера-->
     <section class="slider">
       <h2 class="visually-hidden">Слайдер популярных гаджетов</h2>
-      <div class="container">
+      <div class="container slider-wrapper">
   <!--       Переключение слайдера-->
         <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
         <input class="visually-hidden" type="radio" id="product-2" name="toggle">
@@ -248,26 +248,32 @@
     <section class="index-service">
 <!--       Спрятать h2 при верстке-->
       <h2 class="visually-hidden">Доставка, Гарантия, Кредит</h2>
-      <div class="container slider-wrapper">
-       <ul class="service-list">
-         <li><button type="button" href="#" class="btn active-tab">Доставка </button></li>
-         <li><button type="button" href="#" class="btn">Гарантия</button></li>
-         <li><button type="button" href="#" class="btn"> Кредит</button></li>
-       </ul>
+      <div class="container service-wrapper">
+       <!--       Переключение слайдера-->
+        <input class="visually-hidden" type="radio" id="delivery" name="toggle2" checked>
+        <input class="visually-hidden" type="radio" id="warranity" name="toggle2">
+        <input class="visually-hidden" type="radio" id="credit" name="toggle2"> 
+        
+        <div class="service-list">
+              <label for="delivery" class="second-slider-control1 btn">Доставка
+              </label>
+              <label for="warranity" class="second-slider-control2 btn">Гарантия</label>
+              <label for="credit" class="second-slider-control3 btn"> Кредит</label>
+        </div>
        <ul class="service-slides">
 <!--        Первый слайд -->
-         <li class="delivery-slide">
+         <li class="delivery-slide slider-item">
            <h3>Доставка</h3>
            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
          </li>
 <!--         Второй слайд-->
-         <li class="warranity-slide hidden">
+         <li class="warranity-slide slider-item">
            <h3>Гарантия</h3>
            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
             Товар, не дом, конечно же.</p>
          </li>
 <!--         Третий слайд-->
-         <li class="credit-slide hidden">
+         <li class="credit-slide slider-item">
           <h3>Кредит</h3>
            <p>Залезть в долговую яму стало проще! Кредитные <br> 
            консультанты подберут для вас наиболее выгодные <br>
