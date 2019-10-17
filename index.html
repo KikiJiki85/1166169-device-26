@@ -22,7 +22,7 @@
        
       <ul class="user-navigation">
         <li>
-          <a class="login-link" href="login.html">Войти</a>
+          <a class="login-link" href="#">Войти</a>
         </li>
       </ul>
          <a href="#" class="compare">Сравнить</a>
@@ -401,27 +401,6 @@
       </div>
     </div>
   </footer>
-    <script>
-      var link = document.querySelector(".modal-map");
-      var popup = document.querySelector(".modal-bigmap");
-      var close = document.querySelector(".modal-close");
-      var writeus = document.querySelector(".modal-writeus");
-      
-      link.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.remove("hidden");
-      });
-      
-      close.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.add("hidden");
-      });
-      
-       close.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        writeus.classList.add("hidden");
-      });
-      
-    </script>
+  <script src="js/script.js"></script>
   </body>
 </html>

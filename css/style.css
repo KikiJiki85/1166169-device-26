@@ -1180,12 +1180,13 @@ main.wrapper-decor {
 }
 
 .filters {
-	width: 328px;
+/*	width: 328px;*/
 	padding-left: 60px;
 }
 
 .catalog-inner {
 	width: 833px;
+    margin-left: 66px;
 }
 
 .filters h2,
@@ -1304,7 +1305,7 @@ main.wrapper-decor {
 	width: 760px;
 	background-color: #ebebeb;
 	box-sizing: border-box;
-	margin-bottom: 77px;
+	margin-bottom: 75px;
 	margin-left: 73px;
 	margin-top: 36px;
 }
@@ -1410,6 +1411,8 @@ main.wrapper-decor {
 	width: 360px;
 	height: 380px;
 	position: absolute;
+    top: 0;
+    left: 0;
 	background-color: rgba( 238, 238, 238, 0.7);
 	display: none;
 	flex-direction: column;
@@ -1430,6 +1433,7 @@ main.wrapper-decor {
 	opacity: 0.5;
 	font-family: 'OpenSans', Arial, sans-serif;
 	font-size: 13px;
+    font-weight: 300;
 	line-height: 36px;
 	letter-spacing: 0.13px;
 	text-align: center;
