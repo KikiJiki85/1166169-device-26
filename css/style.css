@@ -2037,8 +2037,7 @@ main.wrapper-decor {
 .modal-bigmap {
 	width: 960px;
 	height: 559px;
-	top: 50%;
-	left: 50%;
-	margin-left: -480px;
-	margin-top: -280px;
+	top: 10vw;
+	left: 50vw;
+    margin-left:  -480px;
 }
