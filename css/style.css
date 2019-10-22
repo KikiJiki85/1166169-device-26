@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Gilroy';
   src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
-    url('../fonts/gilroyextrabold.woff') format('woff');
+       url('../fonts/gilroyextrabold.woff') format('woff');
   font-weight: 800;
   font-style: normal;
 }
@@ -9,7 +9,7 @@
 @font-face {
   font-family: 'Gilroy';
   src: url('../fonts/gilroylight.woff2') format('woff2'),
-    url('../fonts/gilroylight.woff') format('woff');
+       url('../fonts/gilroylight.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
@@ -177,6 +177,10 @@ img {
 .filter-form .btn {
   background-color: transparent;
   padding: 13px 39px 13px 39px;
+}
+
+.form-writeus .btn {
+  background-color: transparent;
 }
 
 .btn:hover,
@@ -1376,16 +1380,12 @@ main.wrapper-decor {
   margin: 0;
   padding: 0;
   width: 559px;
+  position: relative;
 }
 
 .sorting li:nth-child(2) {
   margin-right: 31px;
   margin-left: 29px;
-}
-
-.sorting li:nth-child(4) {
-  margin-right: 19px;
-  margin-left: auto;
 }
 
 .sorting a {
@@ -1399,6 +1399,10 @@ main.wrapper-decor {
   width: 11px;
   height: 10px;
   background-image: url('../img/icon-up-dir.svg');
+  position: absolute;
+  top: 4px;
+  ;
+  right: 28px;
 }
 
 .sort-down::after {
@@ -1406,6 +1410,9 @@ main.wrapper-decor {
   width: 11px;
   height: 10px;
   background-image: url('../img/icon-down-dir.svg');
+  position: absolute;
+  top: 4px;
+  right: -2px;
 }
 
 .sorting a {
@@ -1902,35 +1909,64 @@ main.wrapper-decor {
   box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
 }
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
   0% {
-    transform: translateY(-2000px);
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
   }
 
   70% {
-    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
   }
 
   90% {
-    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
 
   100% {
-    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
 .modal-show {
   display: block;
-  animation-name: bounce;
-  animation-duration: 0.6s;
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 
-@keyframes shake {
+@-webkit-keyframes shake {
 
   0%,
   100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 
   10%,
@@ -1938,21 +1974,57 @@ main.wrapper-decor {
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
 .modal-error {
-  animation-name: shake;
-  animation-duration: 0.6s;
+  -webkit-animation-name: shake;
+          animation-name: shake;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
+
+textarea.modal-invalid,
+input.modal-invalid {
+  background-color: #f6dada;
+}
+
 
 .modal-writeus {
   -webkit-box-sizing: border-box;
@@ -2002,7 +2074,7 @@ main.wrapper-decor {
 
 .form-writeus .btn {
   -ms-flex-item-align: start;
-  align-self: flex-start
+  align-self: flex-start;
 }
 
 .name-writeus,
@@ -2035,10 +2107,8 @@ main.wrapper-decor {
   margin-bottom: 13px;
 }
 
-.form-writeus input[type='text'],
-.form-writeus textarea {
+.writeus-decor {
   font: inherit;
-  background-color: #f2f2f2;
   border: none;
   font-size: 14px;
   padding-top: 18px;
@@ -2046,40 +2116,34 @@ main.wrapper-decor {
   padding-left: 20px;
   margin-bottom: 39px;
   line-height: 18px;
+  background-color: #f2f2f2;
 }
 
-.form-writeus input::-webkit-input-placeholder,
-.form-writeus textarea::-webkit-input-placeholder {
+.writeus-decor::-webkit-input-placeholder {
   color: rgba(70, 70, 70, 0.4);
 }
 
-.form-writeus input::-moz-placeholder,
-.form-writeus textarea::-moz-placeholder {
+.writeus-decor::-moz-placeholder {
   color: rgba(70, 70, 70, 0.4);
 }
 
-.form-writeus input:-ms-input-placeholder,
-.writeus textarea:-ms-input-placeholder {
+.writeus-decor:-ms-input-placeholder {
   color: rgba(70, 70, 70, 0.4);
 }
 
-.form-writeus input::-ms-input-placeholder,
-.form-writeus textarea::-ms-input-placeholder {
+.writeus-decor::-ms-input-placeholder {
   color: rgba(70, 70, 70, 0.4);
 }
 
-.form-writeus input::placeholder,
-.form-writeus textarea::placeholder {
+.writeus-decor::placeholder {
   color: rgba(70, 70, 70, 0.4);
 }
 
-.form-writeus input:hover,
-.form-writeus textarea:hover {
+.writeus-decor:hover {
   background-color: #eaeaea;
 }
 
-.form-writeus input:focus,
-.form-writeus textarea:focus {
+.writeus-decor:focus {
   background-color: #ffffff;
   outline: solid 3px #f0c52e;
 }

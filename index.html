@@ -6,7 +6,7 @@
   <title>Интернет-магазин гаджетов DEVICE</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/compressed.css">
 </head>
 
 <body>
@@ -17,9 +17,8 @@
         <img src="img/device-header-logo.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов Device">
       </a>
       <!--       Форма поиска по сайту-->
-      <form class="search-field" method="get" action=https://echo.htmlacademy.ru>
-        <input type="search" name="search" placeholder="Поиск по сайту" class="search-index"
-          aria-label="Поле поиска по сайту">
+      <form class="search-field" method="get" action=https://echo.htmlacademy.ru> <input type="search" name="search"
+        placeholder="Поиск по сайту" class="search-index" aria-label="Поле поиска по сайту">
         <button type="submit" class="search-btn">Найти</button>
       </form>
 
@@ -343,10 +342,10 @@
     <section class="modal modal-bigmap">
       <h2 class="visually-hidden">Большая карта проезда к офису интернет-магазина DEVICE по адресу улица Строителей,15
       </h2>
-      <!--    <img src="img/map-big-jpg@2x.jpg" width="960" height="559" alt="Карта проезда к офису интернет-магазина DEVICE по адресу улица Строителей, 15">-->
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779967!2d37.52742931614872!3d55.68703098053583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1571652093179!5m2!1sru!2sru"
         width="960" height="559" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      <!--        <img src="img/map-big-jpg@2x.jpg" width="960" height="559" alt="Карта проезда к офису интернет-магазина DEVICE по адресу улица Строителей, 15">-->
       <button class="modal-close" type="button" aria-label="Закрыть окно"></button>
     </section>
   </main>
@@ -358,15 +357,16 @@
       <div class="modal-twocolumns">
         <div class="name-writeus">
           <label for="user-name">Ваше имя:</label>
-          <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+          <input id="user-name" class="writeus-decor" type="text" name="name" placeholder="Имя Фамилия">
         </div>
         <div class="email-writeus">
           <label for="user-email">Ваш e-mail:</label>
-          <input id="user-email" type="text" name="email" placeholder="email@example.com">
+          <input id="user-email" class="writeus-decor" type="text" name="email" placeholder="email@example.com">
         </div>
       </div>
       <label for="user-text">Текст письма:</label>
-      <textarea name="text" id="user-text" cols="30" rows="5" placeholder="В свободной форме"></textarea>
+      <textarea name="text" id="user-text" class="writeus-decor" cols="30" rows="5"
+        placeholder="В свободной форме"></textarea>
       <button type="submit" class="btn">Отправить</button>
     </form>
     <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
@@ -420,7 +420,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/compressed.js"></script>
 </body>
 
 </html>

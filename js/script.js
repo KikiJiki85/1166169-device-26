@@ -1,7 +1,9 @@
-var link = document.querySelector(".modal-map");
-var popup = document.querySelector(".modal-bigmap");
-var close = document.querySelector(".modal-close");
+//  Переменные первого модального окна Карты
+var mapLink = document.querySelector(".modal-map");
+var mapPopup = document.querySelector(".modal-bigmap");
+var mapClose = document.querySelector(".modal-close");
 
+//  Переменные второго модального окна Напишите Нам
 var writeUsLink = document.querySelector(".writeus");
 var writeUsPopup = document.querySelector(".modal-writeus");
 var formWriteUs = writeUsPopup.querySelector(".form-writeus");
@@ -13,24 +15,23 @@ var userText = writeUsPopup.querySelector("#user-text");
 var closeWriteUs = writeUsPopup.querySelector(".modal-close");
 var isStorageSupport = true; // Флаг доступности LocalStorage
 
-// Первое модальное окно показа карты
-link.addEventListener("click", function (evt) {
+//  Первое модальное окно карты
+mapLink.addEventListener("click", function (evt) {
   evt.preventDefault();
-  popup.classList.add("modal-show");
+  mapPopup.classList.add("modal-show");
 });
 
-close.addEventListener("click", function (evt) {
+mapClose.addEventListener("click", function (evt) {
   evt.preventDefault();
-  popup.classList.remove("modal-show");
+  mapPopup.classList.remove("modal-show");
 });
 
-// Нажатие клавиши ESC при открытом модальном окне
+//  Нажатие клавиши ESC при открытом модальном окне
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (popup.classList.contains("modal-show")) {
-      popup.classList.remove("modal-show");
-      popup.classList.remove("modal-error");
+    if (mapPopup.classList.contains("modal-show")) {
+      mapPopup.classList.remove("modal-show");
     }
   }
 });
@@ -54,28 +55,48 @@ writeUsLink.addEventListener("click", function (evt) {
   writeUsPopup.classList.add("modal-show");
   userName.focus();
 
-  //  if (storageUserName) {
-  //    userName = storageUserName;
-  //    userEmail.focus();
-  //  } else {
-  //    userName.focus();
-  //  }
-  //
-  //
-  //  if (storageUserEmail) {
-  //    userEmail = storageUserEmail;
-  //    userText.focus();
-  //  } else {
-  //    userEmail.focus();
-  //  }
+  //    if (storageUserName) {
+  //      userName = storageUserName;
+  //      userEmail.focus();
+  //    } else {
+  //      userName.focus();
+  //    }
+  //  
+  //    if (storageUserEmail) {
+  //      userEmail = storageUserEmail;
+  //      userText.focus();
+  //    } else {
+  //      userEmail.focus();
+  //    }
 });
 
 formWriteUs.addEventListener("submit", function (evt) {
   if (!userName.value || !userEmail.value || !userText.value) {
     evt.preventDefault();
+
+    if (!userName.value) {
+      userName.classList.add("modal-invalid");
+    } else {
+      userName.classList.remove("modal-invalid");
+    }
+
+    if (!userEmail.value) {
+      userEmail.classList.add("modal-invalid");
+    } else {
+      userEmail.classList.remove("modal-invalid");
+    }
+
+    if (!userText.value) {
+      userText.classList.add("modal-invalid");
+    } else {
+      userText.classList.remove("modal-invalid");
+    }
+
+
     writeUsPopup.classList.remove("modal-error");
     writeUsPopup.offsetWidth = writeUsPopup.offsetWidth;
     writeUsPopup.classList.add("modal-error");
+
   } else {
     if (isStorageSupport) {
       localStorage.setItem("userName", userName.value);
@@ -88,4 +109,14 @@ closeWriteUs.addEventListener("click", function (evt) {
   evt.preventDefault();
   writeUsPopup.classList.remove("modal-show");
   writeUsPopup.classList.remove("modal-error");
+});
+
+//  Нажатие клавиши ESC при открытом модальном окне
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (writeUsPopup.classList.contains("modal-show")) {
+      writeUsPopup.classList.remove("modal-show");
+    }
+  }
 });
