@@ -64,9 +64,9 @@
         <input class="visually-hidden" type="radio" id="product-2" name="toggle">
         <input class="visually-hidden" type="radio" id="product-3" name="toggle">
         <div class="slider-controls">
-          <label for="product-1" class="slider-control1">1</label>
-          <label for="product-2" class="slider-control2">2</label>
-          <label for="product-3" class="slider-control3">3</label>
+          <label for="product-1" class="slider-control1" aria-label="Первый слайд">1</label>
+          <label for="product-2" class="slider-control2" aria-label="Второй слайд" >2</label>
+          <label for="product-3" class="slider-control3" aria-label="Третий слайд">3</label>
         </div>
         <ul class="slider-list">
           <!--         Первый слайд-->
@@ -150,7 +150,6 @@
     <!--    Блок разделов-->
     <!--Вставка картинок svg произведена прямым включение в html код, так как согласно styleguidу их размытие при :active не затрагивает фон-->
     <section class="index-catalog">
-      <!--    Спрятать этот h2 при верстке-->
       <h2 class="visually-hidden">Каталог предлагаемого оборудование</h2>
       <div class="container">
         <ul>
@@ -292,10 +291,18 @@
       <h2 class="visually-hidden">Производители предлагаемых гаджетов</h2>
       <div class="container">
         <ul>
-          <li><img src="img/logo-dji-active@2x.jpg" width="260" height="100" alt="Логотип фирмы DJI"></li>
-          <li><img src="img/logo-sp-active@2x.jpg" width="260" height="100" alt="Логотип фирмы SPGadgets"></li>
-          <li><img src="img/logo-gopro-active@2x.jpg" width="260" height="100" alt="Логотип фирмы GoPro"></li>
-          <li><img src="img/logo-vive-active@2x.jpg" width="260" height="100" alt="Логотип фирмы VIVE"> </li>
+          <li class="partner-logo">
+            <img src="img/logo-dji-active@2x.jpg" width="260" height="100" alt="Логотип фирмы DJI">
+          </li>
+          <li class="partner-logo">
+            <img src="img/logo-sp-active@2x.jpg" width="260" height="100" alt="Логотип фирмы SPGadgets">
+          </li>
+          <li class="partner-logo">
+            <img src="img/logo-gopro-active@2x.jpg" width="260" height="100" alt="Логотип фирмы GoPro">
+          </li>
+          <li class="partner-logo" >
+            <img src="img/logo-vive-active@2x.jpg" width="260" height="100" alt="Логотип фирмы VIVE">
+          </li>
         </ul>
       </div>
     </section>
@@ -401,7 +408,7 @@
             </a>
           </li>
         </ul>
-        <a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy">
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy" aria-label="Разработчик сайта - Html Academy">
           <img src="img/logo-htmlacademy.svg" width="27" height="35" alt="Разработчик сайта - Html Academy">
         </a>
       </div>

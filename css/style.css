@@ -782,6 +782,7 @@ a:active .catalog-partname {
 .index-service {
     background-image: url('../img/services-bg.png');
     background-repeat: repeat-x;
+    background-color: #e5e5e5;
     margin-top: 81px;
     min-height: 388px;
 }
@@ -933,6 +934,7 @@ a:active .catalog-partname {
     max-width: 440px;
     line-height: 31px;
     letter-spacing: 0.3px;
+    padding-bottom: 62px;
 }
 
 /*=============us-contacts=================*/
@@ -1028,6 +1030,7 @@ a:active .catalog-partname {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -1061,11 +1064,11 @@ a:active .catalog-partname {
     background-position: 0 0;
 }
 
-.partners-logos img {
+.partner-logo img {
     opacity: 0;
 }
 
-.partners-logos li:hover img {
+.partner-logo:hover img {
     opacity: 1;
 }
 
@@ -1112,7 +1115,7 @@ footer .compare {
 }
 
 .footer-tel {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 .footer-social ul,
